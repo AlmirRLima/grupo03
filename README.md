@@ -1,4 +1,6 @@
-# <h1 align="center">Projeto *GRUPO03* | T.EX - Technology Experts</h1>
+<img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F91806f98-46cd-4589-a07c-41ebaa0706b6%2FBrown_Modern_Fashion_Newspaper_Tumblr_Banner.png?table=block&id=dc322635-2a84-4eb1-95ec-a7ffba60bfac&spaceId=81488860-4078-4ce8-aee6-0bf2abd9bd1b&width=2000&userId=ae4bb084-6077-4fb9-9d6e-ea4e6b51724b&cache=v2"/>
+
+<h1 align="center">Projeto *GRUPO03* | T.EX - Technology Experts</h1>
 
 ![GRUPO03](LINK)
 
@@ -23,7 +25,7 @@ https://proto.io/
 <tr>
 <td align="center"><a href="https://github.com/xlDuarte"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/90268230?v=4" width="150px;" alt="xlDuarte"/><br /><sub><b>Gabriel Duarte</b></sub></a><br /><a href="https://github.com/xlDuarte" title="Desenvolvedor FullStack, UI-UX Designer, Escritor, Advogado e tudo que for possível!">🎓🚀</a></td>
 
-<td align="center"><a href="https://github.com/And3rsLMM/"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/86325561?v=4" width="150px;" alt="Anderson Machado"/><br /><sub><b>Anderson Lima machado</b></sub></a><br /><a href="https://github.com/And3rsLMM" title="Aluno TEX">👨‍🎓</a></td>
+<td align="center"><a href="https://github.com/And3rsLMM/"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/86325561?v=4" width="150px;" alt="Anderson Machado"/><br /><sub><b>Anderson Lima machado</b></sub></a><br /><a href="https://github.com/And3rsLMM" title="Desenvolvedor Fullstack">💻</a></td>
  
 <td align="center"><a href="https://github.com/AlmirRLima"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/114540396?v=4" width="150px;" alt="Almir Lima"/><br /><sub><b>Almir Lima</b></sub></a><br /><a href="https://github.com/AlmirRLima" title="Aluno TEX">👨‍🎓</a></td> 
 
