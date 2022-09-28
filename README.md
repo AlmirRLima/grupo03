@@ -1,6 +1,6 @@
-# <h1 align="center">Projeto *GRUPO03* | T.EX - Technology Experts</h1>
+# <h1 align="center">Projeto HOTEL CASA NA PRAIA | T.EX - Technology Experts</h1>
 
-![GRUPO03](LINK)
+![HOTEL CASA NA PRAIA](https://i.imgur.com/tpIM4ZH.png)
 
 <h2 align="center"> Projeto desenvolvido para <a href="https://www.texperts.com.br/" target="_blank"/>[T.EX]</a> como exercício do curso Full Stack JavaScript.</h2>
 
@@ -9,13 +9,17 @@
 
 ## Detalhes do projeto:
 
-Todos os detalhes do projeto *GRUPO03* se encontram neste: <a href="https://www.notion.so/gaaduartee/TEX-GRUPO-03-dc3226352a844eb195eca7ffba60bfac/" target="_blank"/>[LINK DO NOTION GRUPO03]</a> <br>
+- Todos os detalhes do projeto HOTEL CASA NA PRAIA se encontram neste: <a href="https://www.notion.so/gaaduartee/TEX-GRUPO-03-dc3226352a844eb195eca7ffba60bfac/" target="_blank"/>[LINK DO NOTION]</a> <br>
 ~~~html
 https://www.notion.so/gaaduartee/TEX-GRUPO-03-dc3226352a844eb195eca7ffba60bfac
 ~~~
-O projeto das telas do app foram feitos por este site: <a href="https://proto.io/" target="_blank"/>[PROTO.IO GRUPO03]</a>
+- O projeto das telas do app foram feitos por este site: <a href="https://proto.io/" target="_blank"/>[PROTO.IO]</a>
 ~~~html
 https://proto.io/
+~~~
+- As imagens e a apresentação foram feitas pelo: <a href="https://www.canva.com/design/DAFNeIFNOlA/AWn9doq6dVS-whvxdW6B8A/view?utm_content=DAFNeIFNOlA&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank"/>[CANVA]</a>
+~~~html
+https://www.canva.com/design/DAFNeIFNOlA/AWn9doq6dVS-whvxdW6B8A/view?utm_content=DAFNeIFNOlA&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu
 ~~~
 
 ## Membros do projeto:
@@ -41,7 +45,7 @@ https://proto.io/
 </table>
 
 ## Dúvidas e Sugestões pelo EMAIL
-[![Gmail Badge](https://img.shields.io/badge/-SACgrupo03@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:SACgrupo03@gmail.com)](mailto:SACgrupo03@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-SAChotelcasanapraia@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:SAChotelcasanapraia@gmail.com)](mailto:SAChotelcasanapraia@gmail.com)
 
 ## Licença
 [MIT License ](https://choosealicense.com/licenses/mit/)
