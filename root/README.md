@@ -27,7 +27,7 @@ https://www.canva.com/design/DAFNeIFNOlA/AWn9doq6dVS-whvxdW6B8A/view?utm_content
 <tr>
 <td align="center"><a href="https://github.com/xlDuarte"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/90268230?v=4" width="150px;" alt="xlDuarte"/><br /><sub><b>Gabriel Duarte</b></sub></a><br /><a href="https://github.com/xlDuarte" title="Desenvolvedor FullStack, UI-UX Designer, Escritor, Advogado e tudo que for possível!">🎓🚀</a></td>
 
-<td align="center"><a href="https://github.com/And3rsLMM/"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/86325561?v=4" width="150px;" alt="Anderson Machado"/><br /><sub><b>Anderson Machado</b></sub></a><br /><a href="https://github.com/And3rsLMM" title="Desenvolvedor Fullstack">💻</a></td>
+<td align="center"><a href="https://github.com/And3rsLMM/"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/86325561?v=4" width="150px;" alt="Anderson Machado"/><br /><sub><b>Anderson Lima machado</b></sub></a><br /><a href="https://github.com/And3rsLMM" title="Desenvolvedor Fullstack">💻</a></td>
  
 <td align="center"><a href="https://github.com/AlmirRLima"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/114540396?v=4" width="150px;" alt="Almir Lima"/><br /><sub><b>Almir Lima</b></sub></a><br /><a href="https://github.com/AlmirRLima" title="Aluno TEX">👨‍🎓</a></td> 
 
