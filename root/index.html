@@ -1,36 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css">
     <title>Hotel Casa de Praia</title>
 </head>
+
 <body>
-    <header>
-        <div style="width: 100%; height: 100%;">
-            <img src="/root/images/png/BANNER-CASANAPRAIA.png" 
-            style="display: block; object-fit: cover; width: 100%; height: 100%; object-position: center 100%;">
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center; height: 155px; width: 158px; position: relative; z-index: 1; margin-left: 3px; margin-bottom: 0px; margin-top: -80px;">
-            <img src="/root/images/png/logo.png" 
-            style="display: block; object-fit: cover; border-radius: 3px; width: 165px; height: 160px;margin-top: 0px; margin-bottom: 25px;">
-        </div>        
-    </header>
     <nav>
-        <div>
-            <h1>menu de navegação</h1>
-        </div>
+        <header>
+            <a href="#" class="logo">HOTEL CASA NA PRAIA</a>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/acomodacoes.html">Acomodações</a></li>
+                <li><a href="pages/formulario.html">Formulário de contato</a></li>
+                <li><a href="pages/sobrenos.html">Sobre nosso time</a></li>
+            </ul>
+            <div class="campologin">
+                <label for="nome"><strong>LOGIN</strong></label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="sobrenome"><strong>SENHA</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </header>    
     </nav>
-    <main>
-        <section>
-            <h1>conteudo</h1>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <h1>rodapé copyright etc</h1>
-        </div>
-    </footer>
-</body>
+
+    <body>
+        <main>
+            
+
+            <section class="parallax">
+                <div style="width: 100%; height: 100%;">
+                    <img src="images/png/BANNER-CASANAPRAIA.png"
+                        style="display: block; object-fit: cover; width: 100%; height: 100%; object-position: center 100%;">
+                </div>
+            </section>
+
+            <section class="sec">
+                <h2>HOTEL CASA NA PRAIA</h2>
+                <p>Somos uma empresa de hotéis boutique com paixão por fornecer serviços de qualidade para todas as
+                    idades e
+                    orçamentos.
+                    Orgulhamo-nos do serviço ao cliente e queremos tornar a sua estadia a melhor possível.
+
+                    <br><br>Estamos empenhados em fazer de você o lugar mais confortável e conveniente para o seu dia
+                    especial acontecer.
+                    Nossos quartos simples e aconchegantes são perfeitos para qualquer ocasião e são perfeitos para sua
+                    família, grupo de amigos,
+                    colegas ou você mesmo, pois você pode fugir da agitação da cidade sem sacrificar o conforto e o
+                    estilo.
+                    Ao reservar um quarto no HOTEL CASA NA PRAIA, você está ajudando a fazer a diferença.
+
+                    Nosso objetivo é criar uma experiência hoteleira inesquecível em nossa pequena cidade histórica.
+                    Acreditamos em fornecer um serviço e hospitalidade excepcionais e garantiremos que todos os hóspedes
+                    se
+                    divirtam aqui no HOTEL CASA NA PRAIA.
+                    Oferecemos uma variedade de opções de refeições, incluindo um buffet de pequeno-almoço.
+                    Também possuímos uma pequena área de jardim no jardim, e o jardim é usado para uma variedade de
+                    eventos,
+                    como casamentos, festas de aniversário, festas de aniversário e ocasiões especiais.
+
+                    <br><br>Agora estamos oferecendo um café da manhã separado oferecido aos hóspedes do hotel,
+                    disponível
+                    pela manhã e à noite em nosso terraço.
+                    Também estamos felizes em receber reservas de grupos e agradecemos qualquer dúvida que você possa
+                    ter.
+                </p>
+            </section>
+        </main>
+
+        <!--/RodapéFooter-->
+        <footer>
+            <hr>
+            <div class="redessociaisfooter">
+                <a href="https://github.com/AlmirRLima/grupo03" target="_blank">
+                    <img width="50" height="50" src="images/png/github.png" alt="Logo do github">
+                </a>
+            </div>
+            <div class="logodireitosreservados" >
+                <img width="75" height="75" src="images/png/logo.png" alt="Logo">
+            </div>
+            <div class="direitosreservadosfooter">
+                <p>
+                    Todos os direitos reservados: HOTEL CASA NA PRAIA &copy
+                </p>
+            </div>
+            <hr>
+            <!--/RodapéFooter-->
+        </footer>
+    </body>
+
 </html>
