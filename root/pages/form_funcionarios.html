@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Casa na Praia</title>
+  </head>
+  <!-- propriedade e valor -->
+  <style>
+    body {
+      width: 80%;
+      margin: auto;
+      font-size: 1.1em;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      line-height: 1.3em;
+      border: 1px dashed #ccc;
+      padding: 10px;
+    }
+    figure {
+      padding: 20px;
+    }
+    header * {
+      width: 90%;
+      font-size: 2em;
+      font-weight: 700;
+    }
+    header nav ul li {
+      font-size: 08px;
+    }
+    header img {
+      width: 10%;
+    }
+    select {
+      font-size: 0.88em;
+    }
+  </style>
+  <body>
+    <header>
+      <img
+        src="../images/png/LOGO_-_CASANAPRAIA.png"
+        alt="Casa na Praia"
+        width="30"
+      />
+      <span>Atendimento Funcionários</span>
+      <hr />
+      <!-- <img src="../images/massa01.jpeg" alt="Massas" style="width: 20%" /> -->
+      <nav>
+        <ul>
+          <li>
+            <a href="/root/index.html">Home</a> |
+            <a href="#servicos">Serviços</a> |
+            <a href="#ajuda">Dicas de utilização</a> |
+            <a href="#falerh">Fale com o RH!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article id="servicos">
+          <h2>Suas informações e solicitações</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex atque
+            debitis provident, saepe dolores nisi libero inventore voluptate in
+            quidem omnis, cum, quam eius ipsam laboriosam velit a ea?
+            Reprehenderit nihil magni maiores cupiditate dolor accusantium,
+            tenetur inventore consequuntur quaerat aspernatur cumque aut vitae
+            corporis hic itaque iusto, non possimus.
+          </p>
+          <form action="" method="post" enctype="multipart/form-data">
+            <!-- <fieldset disabled> -->
+            <fieldset>
+              <legend>Preencha todos os campos</legend>
+              <p>Suas informações</p>
+              <ul>
+                <li>
+                  <label for="codigoFunc">Código de Funcionário</label>
+                  <input
+                    type="text"
+                    id="codigoFunc"
+                    name="codigoFunc"
+                    maxlength="10"
+                    size="10"
+                    autofocus
+                    placeholder="Código funcionário"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="nomeFunc">Nome</label>
+                  <input
+                    type="text"
+                    id="nomeFunc"
+                    name="nomeFunc"
+                    maxlength="30"
+                    size="50"
+                    autofocus
+                    placeholder="Seu nome completo"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="emailFunv">eMail</label>
+                  <input
+                    type="email"
+                    id="emailFunc"
+                    name="emailFunc"
+                    placeholder="Seu email mais usado"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="anosEmpresa">Seu tempo na empresa</label>
+                  <input
+                    type="number"
+                    id="anosEmpresa"
+                    name="anosEmpresa"
+                    required
+                    min="1"
+                    max="30"
+                  />Anos
+                  <input
+                    type="number"
+                    id="mesesEmpresa"
+                    name="mesesEmpresa"
+                    required
+                    min="1"
+                    max="12"
+                  />Meses
+                </li>
+                <li>
+                  <label for="areaEmpresa">Sua área atual</label>
+                  <select name="areaEmpresa" id="areaEmpresa">
+                    <option value="...">...</option>
+                    <option value="operacao">Operação</option>
+                    <optgroup label="Operação">
+                      <option value="areaRecepcao">Recepção</option>
+                      <option value="areaRestaurante">Restaurante</option>
+                      <option value="areaGaragem">Garagem</option>
+                      <option value="areaServicoQuarto">
+                        Serviço de Quarto
+                      </option>
+                    </optgroup>
+                    <option value="gestao">Gestão</option>
+                    <optgroup label="Gestão">
+                      <option value="areaGerencia">Gerencia</option>
+                      <option value="areaSupervisor">Supervisor</option>
+                      <option value="areaConcierge">Concierge</option>
+                    </optgroup>
+                  </select>
+                </li>
+                <hr />
+                <h3>Solicitação de Férias</h3>
+                <li>
+                  <label for="servicosFerias>">Ferias vencidas?</label>
+                  <input
+                    checked
+                    type="radio"
+                    name="feriasVencidas"
+                    id="feriasVencidasSim"
+                    style="accent-color: green"
+                  />Sim
+                  <input
+                    type="radio"
+                    name="feriasVencidas"
+                    id="feriasVencidasNao"
+                    style="accent-color: red"
+                  />Não
+                </li>
+                <li>
+                  <p>
+                    Você pode escolher entre dividir suas férias em 15 ou 20
+                    dias ou tirar 30 dias, converse com seu gestor!
+                  </p>
+                  <label for="feriasDias>">Quantidade de dias</label>
+                  <input
+                    checked
+                    type="radio"
+                    name="feriasDias"
+                    id="ferias15"
+                    style="accent-color: green"
+                  />15 e 15 dias
+                  <input
+                    type="radio"
+                    name="feriasDias"
+                    id="ferias20"
+                    style="accent-color: green"
+                  />20 e 10 dias
+                  <input
+                    type="radio"
+                    name="feriasDias"
+                    id="ferias30"
+                    style="accent-color: green"
+                  />30 dias
+                </li>
+                <p></p>
+                <li>
+                  <label for="feriasPeriodoDe">Periodo das férias de...</label>
+                  <input
+                    type="date"
+                    name="feriasPeriodoDe"
+                    id="feriasPeriodoDe"
+                  />
+                  <label for="feriasPeriodoAte">até...</label>
+                  <input
+                    type="date"
+                    name="feriasPeriodoAte"
+                    id="feriasPeriodoAte"
+                  />
+                </li>
+                <hr />
+                <!--<li>
+                  <label for="servicosFerias">Ferias vencidas?</label>
+                  <input
+                    style="accent-color: green"
+                    type="checkbox"
+                    name="feriasVencidasSim"
+                    id="Sim"
+                  />Sim
+                  <input
+                    style="accent-color: red"
+                    type="checkbox"
+                    name="servicosFerias"
+                    id="feriasVencidasNao"
+                  />Não
+                </li> -->
+                <h3>Afastamento Médico</h3>
+                <p>
+                  Caso tenha sido necessário se afastar por razões de saúde,
+                  envie aqui o atestado justificando o afastamento.
+                </p>
+                <p></p>
+                <li>
+                  <label for="afastamentoPeriodoDe"
+                    >Periodo de afastamento de...</label
+                  >
+                  <input
+                    type="date"
+                    name="afastamentoPeriodoDe"
+                    id="afastamentoPeriodoDe"
+                  />
+                  <label for="afastamentoPeriodoAte">até...</label>
+                  <input
+                    type="date"
+                    name="afastamentoPeriodoAte"
+                    id="afastamentoPeriodoAte"
+                  />
+                </li>
+                <p></p>
+                <li>
+                  <label for="afastamentoObs">Observações Adicionais</label
+                  ><br />
+                  <textarea
+                    name="afastamentoObs"
+                    id="afastamentoObs"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </li>
+                <li>
+                  <label for="atestado">Envie o atestado médico</label><br />
+                  <input type="file" id="atestado" name="aniversariante"
+                  accept="accept=".csv,.pdf,.doc,image/*" />
+                </li>
+                <li><button>Enviar</button></li>
+                <!-- ou -->
+                <!-- <input type="submit" value="Confirmar"> -->
+                <!-- ou -->
+                <!--  ou <button>Confirmar</button> -->
+              </ul>
+            </fieldset>
+          </form>
+        </article>
+
+        <article id="ajuda">
+          <h2>Dicas de utilização</h2>
+          <p>
+            Lorem ipsum,
+            <b>dolor sit amet consectetur adipisicing</b> elit. Debitis
+            <strong>voluptatibus</strong> consequuntur nam velit a quis
+            suscipit<br />
+            voluptatem neque laborum repudiandae!
+          </p>
+          <p></p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            laboriosam minima officia fugit quidem saepe dicta quod, adipisci
+            nemo dolor perferendis qui nesciunt ab beatae at possimus non
+            explicabo expedita ducimus in enim cupiditate! Neque quo mollitia
+            laborum porro at. Hic, expedita labore temporibus molestiae
+            molestias, incidunt odio aspernatur voluptatum in earum ullam libero
+            eaque quod facere cumque at. Facere delectus dolor aperiam sapiente
+            reprehenderit adipisci error perferendis similique eos vitae tempore
+            culpa commodi eum, debitis repudiandae aut minima laudantium.
+            Voluptas quis soluta corporis, dicta assumenda ipsum quos?
+          </p>
+          <hr />
+        </article>
+
+        <article id="falerh">
+          <h2>Fale com o RH!</h2>
+          <p>
+            Lorem ipsum,
+            <b>dolor sit amet consectetur adipisicing</b> elit. Debitis
+            <strong>voluptatibus</strong> consequuntur nam velit a quis suscipit
+            voluptatem neque laborum repudiandae!
+          </p>
+          <table border="1" width="100%">
+            <tr>
+              <td width="50%">
+                <form action="" method="post">
+                  <fieldset>
+                    <legend>Como podemos te ajudar?</legend>
+                    <ul>
+                      <li>
+                        <label for="nome_mensagem">Nome:</label>
+                        <input
+                          type="name"
+                          id="nome_mensagem"
+                          placeholder="JOSE DA SILVA - MATRICULA 999.9999"
+                        />
+                      </li>
+                      <li>
+                        <label for="email_mensagem">eMail:</label>
+                        <input
+                          type="email"
+                          id="email_mensagem"
+                          placeholder="josedasilva@casanapraia.com.br"
+                        />
+                      </li>
+                      <li>
+                        <label for="telefone_mensagem">eMail:</label>
+                        <input
+                          type="telefone"
+                          id="telefone_mensagem"
+                          placeholder="Seu telefone aqui"
+                          required
+                        />
+                      </li>
+                      <li>
+                        <label for="faleRhObs">Sua mensagem para nós!</label
+                        ><br />
+                        <textarea
+                          name="faleRhObs"
+                          id="faleRhObs"
+                          cols="30"
+                          rows="10"
+                        ></textarea>
+                      </li>
+                      <li><button>Enviar</button></li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </td>
+              <td width="50%">
+                <p>eMail: rh@casanapraia.com.br</p>
+                <p>Telefones: 11 9999-9999</p>
+                <p>WhatsApp : 11 98889-8888</p>
+              </td>
+            </tr>
+          </table>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero,
+            dolores culpa, recusandae quod excepturi fuga quam non adipisci
+            fugiat voluptates explicabo cum dicta, id beatae voluptatibus
+            officia sed ducimus aliquid hic consectetur delectus. Nam deleniti
+            velit tenetur vero voluptates fuga explicabo atque ipsum repudiandae
+            nostrum labore quas porro, magnam reprehenderit?
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <table width="100%">
+        <tr>
+          <td width="50%">
+            <p></p>
+          </td>
+          <td width="50%">
+            <p></p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>&copy;2045 - Todos os direitos reservados</p>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
