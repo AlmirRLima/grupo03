@@ -99,11 +99,11 @@ header {
 }
 
 .campologin {
-    display: contents;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 25px;
     text-align: center;
+    gap: 10px;
 }
 
 .acomodacoes {
@@ -161,4 +161,14 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: #9df5cc 25% ;
+}
+
+.button {    
+    background: #112434;
+    color: #fff; 
+    background-repeat:no-repeat;
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor:pointer;
+    overflow: hidden;            
 }
