@@ -179,3 +179,58 @@ h1 {
     cursor:pointer;
     overflow: hidden;            
 }
+
+.acomodacoes acTable {
+
+    border: 0px solid;;
+    width:100%;
+}
+
+.acomodacoes h1 {
+    font-size: 20px;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.acomodacoes acImg {
+    /* border-radius: 8px; */
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.acomodacoes tdLeft {
+    align-items: center;
+    vertical-align:top;
+    width:30%;
+}
+
+.acomodacoes tdRight {
+    align-items: left;
+    vertical-align:top;
+    width:70%;
+}
+
+.acomodacoes h3 {
+    align-content: left;    
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.acomodacoes p1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.acomodacoes p2 {
+    color: #ffff00;
+    margin-bottom: 10px;
+    align-content: right;   
+    align-items: center; 
+    justify-content: center;
+
+}
