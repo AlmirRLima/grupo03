@@ -152,6 +152,10 @@ h1 {
     padding: 10px;
 }
 
+.formularios li{
+    list-style-type: none;
+}
+
 .equipesobrenos {
     display: flex;
     justify-content: center;
