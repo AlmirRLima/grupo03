@@ -107,8 +107,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 10px;
+    gap: 20px;
+    
+}
+
+.campologin a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #112434;
+    border-radius: 20px;
+}
+
+.campologin a:hover,
+.campologin a.active{
+    background: #112434;
+    color: #fff;
 }
 
 .acomodacoes {
@@ -119,17 +132,33 @@ header {
     text-align: center;
 }
 
-.redessociaisfooter {
+.footer {
+    width: 100%;
+    padding: 30px 100px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redessociaisfooter {    
     justify-content: center;
     align-items: center;
-    padding-top: 25px;
+    padding: 10px
+}
+
+.menufooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
 }
 
 .logodireitosreservados {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .direitosreservadosfooter {
@@ -170,12 +199,24 @@ h1 {
     background-color: #9df5cc 25% ;
 }
 
-.button {    
-    background: #112434;
-    color: #fff; 
-    background-repeat:no-repeat;
+.button {
+    background: transparent;
+    color: black;
     padding: 6px 15px;
     border-radius: 20px;
     cursor:pointer;
     overflow: hidden;            
+}
+
+.button:hover{
+    background: #112434;
+    color: #fff;
+    border-radius: 20px;
+    padding: 6px 15px; 
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+    padding: 6px 15px;
 }
