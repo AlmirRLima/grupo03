@@ -97,6 +97,15 @@ header {
     margin-bottom: 10px;
 }
 
+.sec h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec q {
+    color: #fff;
+}
+
 .sec p {
     font-size: 1em;
     color: #fff;
