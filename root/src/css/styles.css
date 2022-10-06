@@ -220,3 +220,79 @@ h1 {
     color: black;
     padding: 6px 15px;
 }
+
+.acomodacoes acTable {
+
+    border: 0px solid;;
+    width:100%;
+}
+
+.acomodacoes h1 {
+    font-size: 20px;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.acomodacoes img {
+    border-radius: 8px;
+    /* border-radius: 50%; */
+    width: 15%;
+    height: auto;
+    align-items: center;
+}
+
+.acomodacoes tdLeft {
+    align-items: center;
+    vertical-align:top;
+    width:30%;
+}
+
+.acomodacoes tdRight {
+    align-items: left;
+    vertical-align:top;
+    width:70%;
+}
+
+.acomodacoes h3 {
+    align-content: left;    
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.acomodacoes p1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.acomodacoes p2 {
+    font-size: large;
+    font-weight: 500;
+    font-style: italic;
+    color: #f09c83;
+    margin-bottom: 10px;
+    align-content: right;   
+    align-items: center; 
+    justify-content: center;
+    text-justify: center ;
+
+}
+
+.acomodacoes input {
+    /* background: transparent; */
+    color: black;
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor:pointer;
+    overflow: hidden;            
+}
+
+.acomodacoes input:hover{
+    background: #9b3b0f;
+    color: #fff;
+    border-radius: 20px;
+    padding: 6px 15px; 
+
+}
