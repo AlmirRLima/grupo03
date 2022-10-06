@@ -1,90 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/root/src/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/root/src/css/styles.css" />
     <title>Hotel Casa de Praia</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <header>
-            <ul class="navigation">
-                <li><a href="/root/index.html">Home</a></li>
-                <li><a href="acomodacoes.html" class="active">Acomodações</a></li>
-                <li><a href="formulario.html" >RESERVAS</a></li>
-            </ul>
-            <div class="campologin">
-                <a href="sobrenos.html" class="links">Area do Colaborador</a>
-                <form action="" method="post">                        
-                    <label for="login"><strong>USUARIO</strong></label>
-                    <input type="email" name="login" id="login" required="required">
-                    <label for="password"><strong>SENHA</strong></label>
-                    <input type="password" name="password" id="password" required="required">
-                    <input class="button" type="submit" value="OK"/>
-                    <br>
-                    <a class="links" href="">Não tem conta? Cadastre-se</a>
-                    <a class="links" href="">Esqueceu sua senha?</a>   
-                </form>                    
-            </div>
-        </header>    
+      <header>
+        <ul class="navigation">
+          <li><a href="/root/index.html">Home</a></li>
+          <li><a href="acomodacoes.html" class="active">Acomodações</a></li>
+          <li><a href="formulario.html">RESERVAS</a></li>
+        </ul>
+        <div class="campologin">
+          <a href="sobrenos.html" class="links">Area do Colaborador</a>
+          <form action="" method="post">
+            <label for="login"><strong>USUARIO</strong></label>
+            <input type="email" name="login" id="login" required="required" />
+            <label for="password"><strong>SENHA</strong></label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required="required"
+            />
+            <input class="button" type="submit" value="OK" />
+            <br />
+            <a class="links" href="">Não tem conta? Cadastre-se</a>
+            <a class="links" href="">Esqueceu sua senha?</a>
+          </form>
+        </div>
+      </header>
     </nav>
 
-        <main>
-            <section class="parallax">
-                <div style="width: 100%; height: 100%;">
-                    <img src="/root/images/png/BANNER-CASANAPRAIA.png"
-                        style="display: block; object-fit: cover; width: 100%; height: 100%; object-position: center 100%;">
-                </div>
-            </section>
+    <main>
+      <section class="parallax">
+        <div style="width: 100%; height: 100%">
+          <img
+            src="/root/images/png/BANNER-CASANAPRAIA.png"
+            style="
+              display: block;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              object-position: center 100%;
+            "
+          />
+        </div>
+      </section>
 
-            <section class="sec">
-                <h2>HOTEL CASA NA PRAIA</h2>
-                <div class="acomodacoes">
-                    <h2 class="">ACOMODAÇÕES DO NOSSO HOTEL</h2>
-                    <br>
-                    <h1>Quarto Premium Casal</h1>
-                    <p class="quarto03"> <img width="750" height="450" src="/root/images/png/room3_basic.jpg" alt="Quarto03">
-                    </p>
-                    <h1>Quarto Premium Solteiro</h1>
-                    <p class="quarto01"> <img width="750" height="450" src="/root/images/png/room4_basic.jpg" alt="Quarto01">
-                    </p>
-                    <br>
-                    <h1>Quarto Família</h1>
-                    <p class="quarto02"> <img width="750" height="450" src="/root/images/png/room02_family.jpg"
-                            alt="Quarto02"> </p>
-                </div>
-            </section>
-        </main>
+      <section class="sec">
+        <div class="acomodacoes">
+          <h2 class="">ACOMODAÇÕES DO NOSSO HOTEL</h2>
+          <p>
+            Todas as nossas acomodações possuem serviços inclusos de wi-fi,
+            estacionamento e serviços de quarto. <br />.
+          </p>
+          <p></p>
+          <p>
+            Consulte nosso guia no quarto ou baixe nosso app -
+            www.appcasanapraia.com.br/appcasaPraia
+          </p>
+          <br />
+          <hr />
+          <br />
+          <acTable>
+            <tr>
+              <tdLeft>
+                <h1>Premium Master Suite - "Ninho das Araras"</h1>
+                <br />
+                <br />
+                <img
+                  src="/root/images/png/room01_master.jpg"
+                  alt="Premium Master Suite"
+                />
+                <img
+                  src="/root/images/jpeg/banheiro01.jpeg"
+                  alt="Premium Master Suite"
+                />
+                <img
+                  src="/root/images/jpeg/roomImage01.jpeg"
+                  alt="Premium Master Suite"
+                />
+                <img
+                  src="/root/images/jpeg/roomkitchen01.jpeg"
+                  alt="Premium Master Suite"
+                />
+                <img
+                  src="/root/images/jpeg/roomsofa01.jpeg"
+                  alt="Premium Master Suite"
+                />
+                <img
+                  src="/root/images/jpeg/banheiro04.jpeg"
+                  alt="Premium Master Suite"
+                />
+                <p></p>
+              </tdLeft>
+              <tdRight>
+                <p1>
+                  Bem vindo ao requinte de nossa Suite Master! <br /><br />Aqui
+                  você poderá descansar e usufruir de todo o conforto de um
+                  quarto equipado com a mais moderna tecnologia. No quarto você
+                  encontrará uma cama estilo "queen-size" com 05 funções de
+                  massagem, e ainda uma TV 4K de 50" com programação livre
+                  (NetFlix, Prime e canais abertos). <br />
+                  <br />
+                  A acomodação possui ainda uma sala um sofá grande e uma
+                  poltrona de leitura, uma TV de 45", dispositivo Alexa,
+                  video-game (PS4 ou XBox) com jogos instalados, e ainda uma
+                  pequena mesa para notebook. A cozinha é extremamente funcional
+                  - um mini-fogão elétrico, uma micro-ondas, cafeteira e
+                  utensílios básicos para preparar pequenas refeições.
+                </p1>
+                <p></p>
+                <br />
+                <p2>R$ $$$$$</p2>
+                <p></p>
+                <br />
+                <input
+                  type="button"
+                  value="Reservas!"
+                  onclick="location.href='../pages/formulario.html';"
+                />
+                <hr />
+                <br />
+              </tdRight>
+            </tr>
+            <tr>
+              <tdLeft>
+                <h1>Família Suite - "Pousada dos Tucanos"</h1>
+                <br />
+                <br />
+                <img
+                  src="/root/images/png/room02_family.jpg"
+                  alt="Família Suite"
+                />
+                <img
+                  src="/root/images/jpeg/banheiro02.jpeg"
+                  alt="Família Suite"
+                />
+                <img
+                  src="/root/images/jpeg/roomImage03.jpeg"
+                  alt="Família Suite"
+                />
+                <img
+                  src="/root/images/jpeg/roomImage08.jpeg"
+                  alt="Família Suite"
+                />
+                <img
+                  src="/root/images/jpeg/roomImage10.jpeg"
+                  alt="Família Suite"
+                />
+                <img
+                  src="/root/images/jpeg/roomImage05.jpeg"
+                  alt="Família Suite"
+                />
+                <p></p>
+              </tdLeft>
+              <tdRight>
+                <p1>
+                  Nada melhor do que curtir uns dias com a família em nosso
+                  hotel! <br /><br />
+                  Nesta acomodação você conta com um quarto amplo com duas camas
+                  tamanho "king-size", para até 4 pessoas. E na sala conjugada
+                  uma TV de 50" com programação livre (NetFlix, Prime e canais
+                  abertos). <br /><br />
+                  A sala ainda possui um sofá cama caso seja necessário hospedar
+                  mais uma pessoa. E você pode contar com um frigobar, uma
+                  pequena pia e uma cafeteira.
+                </p1>
+                <p></p>
+                <br />
+                <p2>R$ $$$$</p2>
+                <p></p>
+                <br />
+                <input
+                  type="button"
+                  value="Reservas!"
+                  onclick="location.href='../pages/formulario.html';"
+                />
+                <hr />
+                <br />
+              </tdRight>
+            </tr>
+            <tr>
+              <tdLeft>
+                <h1>Economic Single - "Recanto da Águia"</h1>
+                <br />
+                <br />
+                <img
+                  src="/root/images/png/room4_basic.jpg"
+                  alt="Economic Single"
+                />
+                <img
+                  src="/root/images/jpeg/roomImage07.jpeg"
+                  alt="Economic Single"
+                />
+                <img
+                  src="/root/images/jpeg/banheiro03.jpeg"
+                  alt="Economic Single"
+                />
+                <img
+                  src="/root/images/jpeg/roomImage09.jpeg"
+                  alt="Economic Single"
+                />
+                <img
+                  src="/root/images/jpeg/roomImage06.jpeg"
+                  alt="Economic Single"
+                />
+                <img
+                  src="/root/images/jpeg/roomImage11.jpeg"
+                  alt="Economic Single"
+                />
+                <p></p>
+              </tdLeft>
+              <tdRight>
+                <p1>
+                  Se está a trabalho e precisa de uma boa noite de sono, conte
+                  conosco!<br /><br />
+                  Nosso quarto básico possui uma cama confortável, TV a cabo e
+                  frigobar. Tem ainda uma mesa de trabalho caso tenha que
+                  realizar alguma atividade pela empresa, ou mesmo se reunir com
+                  mais alguém.<br /><br />
+                  A melhor opção da região - simplicidade sem perder o conforto,
+                  e isso por um preço justo!
+                </p1>
+                <p></p>
+                <br />
+                <p2>R$ $$</p2>
+                <p></p>
+                <br />
+                <input
+                  type="button"
+                  value="Reservas!"
+                  onclick="location.href='../pages/formulario.html';"
+                />
+                <br />
+              </tdRight>
+            </tr>
+          </acTable>
+          <br />
+        </div>
+      </section>
+    </main>
 
-        <!--/RodapéFooter-->
-        <footer class="footer">
-            <hr>
-            <div class="redessociaisfooter">
-                <a href="https://github.com/AlmirRLima/grupo03" target="_blank">
-                    <img width="50" height="50" src="/root/images/png/github.png" alt="Logo do github">
-                    <img width="50" height="50" src="/root/images/png/whatsapp.png" alt="Logo do whatsapp">
-                    <a class="links" href="pages/form_contato.html"><h3>Fale conosco</h3></a>
-                </a>                
-            </div>
-            <div class="logodireitosreservados">
-                <img width="75" height="75" src="/root/images/png/logo.png" alt="Logo">
-                <p>
-                    Todos os direitos reservados: HOTEL CASA NA PRAIA &copy
-                </p>
-            </div>
-            <div class="menufooter">
-                <h3>LINKS ÚTEIS</h3>
-                <a href="/root/index.html" class="links">Home</a>
-                <a href="acomodacoes.html" class="links">Acomodações</a>
-                <a href="formulario.html" class="links">RESERVAS</a>
-            </div>
-            <hr>
-            <!--/RodapéFooter-->
-        </footer>
-    </body>
-
+    <!--/RodapéFooter-->
+    <footer class="footer">
+      <hr />
+      <div class="redessociaisfooter">
+        <a href="https://github.com/AlmirRLima/grupo03" target="_blank">
+          <img
+            width="50"
+            height="50"
+            src="/root/images/png/github.png"
+            alt="Logo do github"
+          />
+          <img
+            width="50"
+            height="50"
+            src="/root/images/png/whatsapp.png"
+            alt="Logo do whatsapp"
+          />
+          <a class="links" href="pages/form_contato.html"
+            ><h3>Fale conosco</h3></a
+          >
+        </a>
+      </div>
+      <div class="logodireitosreservados">
+        <img
+          width="75"
+          height="75"
+          src="/root/images/png/logo.png"
+          alt="Logo"
+        />
+        <p>Todos os direitos reservados: HOTEL CASA NA PRAIA &copy</p>
+      </div>
+      <div class="menufooter">
+        <h3>LINKS ÚTEIS</h3>
+        <a href="/root/index.html" class="links">Home</a>
+        <a href="acomodacoes.html" class="links">Acomodações</a>
+        <a href="formulario.html" class="links">RESERVAS</a>
+      </div>
+      <hr />
+      <!--/RodapéFooter-->
+    </footer>
+  </body>
 </html>
