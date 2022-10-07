@@ -1,358 +1,402 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    overflow-x: hidden;
-    background: #fff;
-    min-height: 100vh;
+  overflow-x: hidden;
+  background: #fff;
+  min-height: 100vh;
 }
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
 }
 
 .logo {
-    color: #112434;
-    font-weight: 700;
-    font-size: 2em;
-    text-decoration: none;
+  color: #112434;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
 }
 
 .navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
 .navigation li {
-    list-style: none;
+  list-style: none;
 }
 
 .navigation li a {
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #112434;
-    border-radius: 20px;
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #112434;
+  border-radius: 20px;
 }
 
 .navigation li a:hover,
 .navigation li a.active {
-    background: #112434;
-    color: #fff;
+  background: #112434;
+  color: #fff;
 }
 
 .parallax {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .parallax img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
 }
 
 #text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 4em;
-    color: #112434;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4em;
+  color: #112434;
 }
 
 .sec {
-    position: relative;
-    padding: 100px;
-    background: #112434;
+  position: relative;
+  padding: 100px;
+  background: #112434;
 }
 
 .sec h2 {
-    font-size: 3em;
-    color: #fff;
-    margin-bottom: 10px;
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .sec h3 {
-    color: #fff;
-    margin-bottom: 10px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .sec h4 {
-    color: #fff;
-    margin-bottom: 10px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .sec q {
-    color: #fff;
+  color: #fff;
 }
 
 .sec p {
-    font-size: 1em;
-    color: #fff;
-    font-weight: 300;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
 }
 
 .campologin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .campologin a {
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #112434;
-    border-radius: 20px;
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #112434;
+  border-radius: 20px;
 }
 
 .campologin a:hover,
 .campologin a.active {
-    background: #112434;
-    color: #fff;
+  background: #112434;
+  color: #fff;
 }
 
 .acomodacoes {
-    display: contents;
-    justify-content: center;
-    align-items: center;
-    padding-top: 25px;
-    text-align: center;
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  text-align: center;
 }
 
 .footer {
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .redessociaisfooter {
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .menufooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
 
 .logodireitosreservados {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .direitosreservadosfooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 h1 {
-    font-size: 80px;
-    color: aquamarine;
-    text-shadow: #ffffff;
-    text-shadow: 55px;
+  font-size: 80px;
+  color: aquamarine;
+  text-shadow: #ffffff;
+  text-shadow: 55px;
 }
 
 .formularios {
-    background-color: #112434;
-    color: #fff;
-    padding: 10px;
+  background-color: #112434;
+  color: #fff;
+  padding: 10px;
 }
 
 .formularios li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .equipesobrenos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .fundosobrenos {
-    font-size: 20px;
-    color: aquamarine;
-    text-shadow: #ffffff;
-    text-shadow: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #9df5cc 25%;
+  font-size: 20px;
+  color: aquamarine;
+  text-shadow: #ffffff;
+  text-shadow: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9df5cc 25%;
 }
 
 .button {
-    background: transparent;
-    color: black;
-    padding: 6px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    overflow: hidden;
+  background: transparent;
+  color: black;
+  padding: 6px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .button:hover {
-    background: #112434;
-    color: #fff;
-    border-radius: 20px;
-    padding: 6px 15px;
+  background: #112434;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 15px;
 }
 
 .links {
-    text-decoration: none;
-    color: black;
-    padding: 6px 15px;
+  text-decoration: none;
+  color: black;
+  padding: 6px 15px;
 }
 
 .acomodacoes acTable {
-    border: 0px solid;
-    width: 100%;
+  border: 0px solid;
+  width: 100%;
 }
 
 .acomodacoes h1 {
-    font-size: 20px;
-    display: contents;
-    justify-content: center;
-    align-items: center;
-    padding-top: 25px;
-    text-align: center;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  /*display: contents;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  text-align: center; */
 }
 
-.acomodacoes img {
-    border-radius: 8px;
-    /* border-radius: 50%; */
-    width: 15%;
-    height: auto;
-    align-items: center;
-}
-
-.acomodacoes tdLeft {
-    align-items: center;
-    vertical-align: top;
-    width: 30%;
-}
-
-.acomodacoes tdRight {
-    align-items: left;
-    vertical-align: top;
-    width: 70%;
+.acomodacoes h2 {
+  font-size: 20px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*display: contents;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;*/
 }
 
 .acomodacoes h3 {
-    align-content: left;
-    color: #fff;
-    margin-bottom: 10px;
+  font-size: 15px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  /* display: contents;
+  justify-content: left;
+  align-items: left;
+  padding-top: 25px; */
+}
+
+.acomodacoes h4 {
+  font-size: 20px;
+  display: contents;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*justify-content: left;
+  align-items: left;
+  padding-top: 25px;*/
+}
+
+.acomodacoes img {
+  border-radius: 8px;
+  box-sizing: border-box;
+  /* border-radius: 50%; */
+  width: 15%;
+  height: auto;
+  align-items: center;
+}
+
+.acomodacoes img:hover {
+  -ms-transform: scale(2.0); /* IE 9 */
+  -webkit-transform: scale(2.0); /* Safari 3-8 */
+  transform: scale(2.0);
+}
+
+.acomodacoes tdLeft {
+  align-items: center;
+  vertical-align: top;
+  width: 30%;
+}
+
+.acomodacoes tdRight {
+  align-items: left;
+  vertical-align: top;
+  width: 70%;
 }
 
 .acomodacoes p1 {
-    color: #ffffff;
-    margin-bottom: 10px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .acomodacoes p2 {
-    font-size: large;
-    font-weight: 500;
-    font-style: italic;
-    color: #f09c83;
-    margin-bottom: 10px;
-    align-content: right;
-    align-items: center;
-    justify-content: center;
-    text-justify: center;
+  font-size: large;
+  font-weight: 500;
+  font-style: italic;
+  color: #f09c83;
+  margin-bottom: 10px;
+  align-content: right;
+  align-items: center;
+  justify-content: center;
+  text-justify: center;
 }
 
 .acomodacoes input {
-    /* background: transparent; */
-    color: black;
-    padding: 6px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    overflow: hidden;
+  /* background: transparent; */
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: larger;
+  color: rgb(7, 1, 39);
+  padding: 6px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .acomodacoes input:hover {
-    background: #9b3b0f;
-    color: #fff;
-    border-radius: 20px;
-    padding: 6px 15px;
+  background: #07033f;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 6px 15px;
 }
 
 .bodylogin {
-    font-family: Arial, Helvetica, sans-serif;
-    background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center center;
-    background-size: cover;
-    height: 89vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center
+    center;
+  background-size: cover;
+  height: 89vh;
 }
 
 .bodylogin div {
-    background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 80px;
-    border-radius: 15px;
-    color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 80px;
+  border-radius: 15px;
+  color: #fff;
 }
 
 .bodylogin h1 {
-    position: center;
-    top: 30%;
-    left: 30%;
+  position: center;
+  top: 30%;
+  left: 30%;
 }
 
 .bodylogin input {
-    padding: 15px;
-    border: none;
-    outline: none;
-    font-size: 15px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 15px;
 }
 
 .bodylogin a {
-    background-color: dodgerblue;
-    border: none;
-    padding: 5% 40%;
-    width: 140%;
-    height: 140%;
-    border-radius: 15px;
-    color: white;
-    font-size: 100%;
-    cursor: pointer;
+  background-color: dodgerblue;
+  border: none;
+  padding: 5% 40%;
+  width: 140%;
+  height: 140%;
+  border-radius: 15px;
+  color: white;
+  font-size: 100%;
+  cursor: pointer;
 }
 
 .bodylogin a:hover {
-    background-color: deepskyblue;
+  background-color: deepskyblue;
 }
 
 .bodylogin .btn-link {
-    text-decoration: none;
+  text-decoration: none;
 }
