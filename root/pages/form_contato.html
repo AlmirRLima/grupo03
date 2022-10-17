@@ -15,54 +15,68 @@
             <ul class="navigation">
                 <li><a href="/root/index.html">Home</a></li>
                 <li><a href="acomodacoes.html">Acomodações</a></li>
-                <li><a href="formulario.html">RESERVAS</a></li>
+                <li><a href="formulario.html" >RESERVAS</a></li>
             </ul>
             <div class="campologin">
                 <a href="/root/admin/login_admincss.html" class="links">Area do Colaborador</a>
-                <form action="" method="post">
+                <form action="" method="post">                        
                     <label for="login"><strong>USUARIO</strong></label>
                     <input type="email" name="login" id="login" required="required">
                     <label for="password"><strong>SENHA</strong></label>
                     <input type="password" name="password" id="password" required="required">
-                    <input class="button" type="submit" value="OK" />
+                    <input class="button" type="submit" value="OK"/>
                     <br>
                     <a class="links" href="">Não tem conta? Cadastre-se</a>
-                    <a class="links" href="">Esqueceu sua senha?</a>
-                </form>
+                    <a class="links" href="">Esqueceu sua senha?</a>   
+                </form>                    
             </div>
-        </header>
+        </header>    
     </nav>
 
-    <main>
-        <section class="parallax">
-            <div style="width: 100%; height: 100%;">
-                <img src="/root/images/png/BANNER-CASANAPRAIA.png"
-                    style="display: block; object-fit: cover; width: 100%; height: 100%; object-position: center 100%;">
-            </div>
-        </section>
+    
+        <main>
+            <section class="banner">
+                <div style="width: 100%; height: 100%;">
+                    <img src="/root/images/png/BANNER-CASANAPRAIA.png"
+                        style="display: block; object-fit: cover; width: 100%; height: 100%; object-position: center 100%;">
+                </div>
+            </section>
 
-        <section class="sec">
-            <h2>Fale Conosco!</h2>
-
-            <form action="" method="post">
-                <fieldset class="formularios">
-                    <p>Fale conosco através de nossas redes sociais, telefone, ou preencha o formulário abaixo.</p>
-                    <hr />
-                    <br />
-                    <label for="nome_mensagem">Nome:</label>
-                    <input type="name" id="nome_mensagem" placeholder="JOSE DA SILVA - MATRICULA 999.9999" />
-                    <br>
-                    <label for="email_mensagem">E-mail:</label>
-                    <input type="email" id="email_mensagem" placeholder="josedasilva@casanapraia.com.br" />
-                    <br>
-                    <label for="telefone_mensagem">Tel:</label>
-                    <input type="telefone" id="telefone_mensagem" placeholder="Seu telefone aqui" required />
-                    <br>
-                    <label for="faleRhObs">Sua mensagem para nós!</label>
-                    <br />
-                    <textarea name="faleRhObs" id="faleRhObs" cols="30" rows="10"></textarea>
-                    <br>
-                    <button>Enviar</button>
+            <section class="sec">
+                <h2>Fale Conosco!</h2>                                          
+                                <form action="" method="post">
+                                    <fieldset class="formularios">
+                                        <p>Fale conosco através de nossas redes sociais, telefone, ou preencha o formulário abaixo.</p>
+                                        <hr />
+                                        <br />
+                                        <label for="nome_mensagem">Nome:</label>
+                                        <input
+                                            type="name"
+                                            id="nome_mensagem"
+                                            placeholder="JOSE DA SILVA - MATRICULA 999.9999"/>
+                                            <br>
+                                        <label for="email_mensagem">E-mail:</label>
+                                        <input
+                                            type="email"
+                                            id="email_mensagem"
+                                            placeholder="josedasilva@casanapraia.com.br"/>
+                                            <br>
+                                        <label for="telefone_mensagem">Tel:</label>
+                                        <input
+                                            type="telefone"
+                                            id="telefone_mensagem"
+                                            placeholder="Seu telefone aqui"
+                                            required/>
+                                            <br>
+                                        <label for="faleRhObs">Sua mensagem para nós!</label>
+                                        <br/>
+                                        <textarea
+                                            name="faleRhObs"
+                                            id="faleRhObs"
+                                            cols="30"
+                                            rows="10"></textarea>
+                                            <br>
+                                        <button>Enviar</button>
 
                     <hr />
                     <br>
@@ -78,33 +92,32 @@
             </form>
     </main>
 
-    <!--/RodapéFooter-->
-    <footer class="footer">
-        <hr>
-        <div class="redessociaisfooter">
-            <a href="https://github.com/AlmirRLima/grupo03" target="_blank">
-                <img width="50" height="50" src="/root/images/png/github.png" alt="Logo do github">
-                <img width="50" height="50" src="/root/images/png/whatsapp.png" alt="Logo do whatsapp">
-                <a class="links" href="pages/form_contato.html">
-                    <h3>Fale conosco</h3>
-                </a>
-            </a>
-        </div>
-        <div class="logodireitosreservados">
-            <img width="75" height="75" src="/root/images/png/logo.png" alt="Logo">
-            <p>
-                Todos os direitos reservados: HOTEL CASA NA PRAIA &copy
-            </p>
-        </div>
-        <div class="menufooter">
-            <h3>LINKS ÚTEIS</h3>
-            <a href="/root/index.html" class="links">Home</a>
-            <a href="acomodacoes.html" class="links">Acomodações</a>
-            <a href="formulario.html" class="links">RESERVAS</a>
-        </div>
-        <hr>
         <!--/RodapéFooter-->
-    </footer>
-</body>
+        <footer class="footer">
+            <hr>
+            <div class="redessociaisfooter">
+                <a href="https://github.com/AlmirRLima/grupo03" target="_blank">
+                    <img src="/root/images/png/github.png" alt="Logo do github">
+                    <img src="/root/images/png/whatsapp.png" alt="Logo do whatsapp">
+                    <a class="links" href="pages/form_contato.html" class="active"><h3>Fale conosco</h3></a>
+                </a>                
+            </div>
+            <div class="logodireitosreservados">
+                <img src="/root/images/png/logo.png" alt="Logo">
+                <p>
+                    Todos os direitos reservados: HOTEL CASA NA PRAIA &copy                    
+                </p>
+                <a class="links" href="#inicio">Voltar ao topo</a>
+            </div>
+            <div class="menufooter">
+                <h3>LINKS ÚTEIS</h3>
+                <a href="index.html" class="links">Home</a>
+                <a href="pages/acomodacoes.html" class="links">Acomodações</a>
+                <a href="pages/formulario.html" class="links">RESERVAS</a>
+            </div>
+            <hr>
+            <!--/RodapéFooter-->
+        </footer>
+    </body>
 
 </html>
