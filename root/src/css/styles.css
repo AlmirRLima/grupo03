@@ -423,3 +423,37 @@ h1 {
   background-color: #ddd;
   border-radius: 5px;
 }
+
+section h2, h3, h4 {
+  color:#ffffff;
+  text-align: left;
+  text-shadow: 4px 4px 4px #ffffff;
+}
+section p {
+  text-align: justify;
+  color:#ffffff;
+  text-shadow: 3px 3px 3px black;  
+}
+.serviços a {
+  text-transform: capitalize;
+  vertical-align:middle;
+}
+.positioned {
+  position:sticky;
+  top: 400px;         
+}
+
+q { 
+  display :flex ;
+  text-align: center;
+  border : solid 1px #ffffff; 
+  vertical-align:middle;     
+}
+hr {
+  color:#ffffff;
+  text-shadow: 3px 3px 3px white;
+}
+.reserva {  
+  padding: 2px 15px;  
+  text-shadow: 4px 4px 4px white;
+}
