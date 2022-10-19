@@ -447,13 +447,20 @@ q {
   display :flex ;
   text-align: center;
   border : solid 1px #ffffff; 
-  vertical-align:middle;     
+  vertical-align:middle;   float:right;  
 }
 hr {
   color:#ffffff;
   text-shadow: 3px 3px 3px white;
 }
 .reserva {  
+  font-size: medium;
   padding: 2px 15px;  
-  text-shadow: 4px 4px 4px white;
+  text-shadow: 4px 4px 4px ;
+  color:royalblue;
+  float:right;  
+}
+h5 {
+  text-align:center;
+  font-size:large;
 }
