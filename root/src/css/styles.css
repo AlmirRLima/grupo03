@@ -14,16 +14,17 @@ body {
 }
 
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-}
+    position: absolute;
+    margin-top: 0.5em;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.2, 1) ease;
+  }
 
 .logo {
   color: #112434;
@@ -33,27 +34,38 @@ header {
 }
 
 .navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    padding: 1%;
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.2, 1) ease;
 }
 
-.navigation li {
-  list-style: none;
+.navigation div {
+    list-style: none;
 }
 
-.navigation li a {
-  text-decoration: none;
-  padding: 6px 15px;
-  color: #112434;
-  border-radius: 20px;
+.navigation div a {
+    text-decoration: none;
+    color: #112434;
 }
 
-.navigation li a:hover,
-.navigation li a.active {
-  background: #112434;
-  color: #fff;
+.navigation div a:hover,
+.navigation div a.active {
+    background: #112434;
+    color: #fff;
+    padding: 0.4em;
+    border-radius: 50px;
+}
+
+.banner{
+    display: block; 
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%; 
+    object-position: center 100%;
 }
 
 .parallax {
@@ -78,28 +90,30 @@ header {
   transform: translateY(-50%);
   font-size: 4em;
   color: #112434;
+  
 }
 
-.sec {
-  position: relative;
-  padding: 100px;
-  background: #112434;
+.sec{
+    position: relative;
+    padding:2vw;
+    background: #112434;
+    transition: all 0.3s ease;
 }
 
 .sec h2 {
   font-size: 3em;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 .sec h3 {
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 .sec h4 {
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 .sec q {
@@ -112,26 +126,38 @@ header {
   font-weight: 300;
 }
 
-.campologin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+.sec img,
+.sec iframe {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
 }
 
-.campologin a {
-  text-decoration: none;
-  padding: 6px 15px;
-  color: #112434;
-  border-radius: 20px;
+.campologin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:-1%;
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.2, 1) ease;
+}
+
+.campologin a{
+    text-decoration: none;
+    color: #112434;
 }
 
 .campologin a:hover,
 .campologin a.active {
   background: #112434;
   color: #fff;
+  border-radius: 50px;
 }
 
+.box1{
+    max-width: 10vw;
+}
 .acomodacoes {
   display: contents;
   justify-content: center;
@@ -141,24 +167,34 @@ header {
 }
 
 .footer {
-  width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.redessociaisfooter {
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+footer .redessociaisfooter img{
+    width: 3em;
+    height: 3em;
+}
+
+footer .logodireitosreservados img{
+    width: 7em;
+    height: 7em;
+}
+
+.redessociaisfooter {    
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .menufooter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 10px;
 }
 
 .logodireitosreservados {
@@ -212,25 +248,25 @@ h1 {
 }
 
 .button {
-  background: transparent;
-  color: black;
-  padding: 6px 15px;
-  border-radius: 20px;
-  cursor: pointer;
-  overflow: hidden;
+    background: transparent;
+    color: black;
+    padding: 6px 15px;
+    border-radius: 50px;
+    cursor:pointer;
+    overflow: hidden;            
 }
 
-.button:hover {
-  background: #112434;
-  color: #fff;
-  border-radius: 20px;
-  padding: 6px 15px;
+.button:hover{
+    background: #112434;
+    color: #fff;
+    border-radius: 50px;
+    padding: 0.4em;
 }
 
 .links {
   text-decoration: none;
   color: black;
-  padding: 6px 15px;
+  padding: 0.4em;
 }
 
 .acomodacoes acTable {
@@ -412,55 +448,69 @@ h1 {
   padding: 8px 16px;
   text-decoration: none;
 }
-
 .pagination a.active {
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+  @media screen and (min-width: 930px) {
+  .box1{
+    max-width: 10em;
+    font-size: 0.8em;
+  }
+
+  .campologin .button{
+    padding: 0.3em;
+    font-size: 1em;
+  }
+
+  .navigation,  
+  .footer {
+    font-size: 1em;
+  }  
+
+  .sec {
+    font-size: 1em;
+  }
 }
 
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
-  border-radius: 5px;
+@media screen and (max-width: 930px) {
+  .navigation {
+    display: block;
+  }
+  .box1{
+    max-width: 10em;
+    font-size: 0.8em;
+  }
+
+  .campologin .button{
+    padding: 0.3em;
+    font-size: 1em;
+  }
+
+  .navigation,  
+  .footer {
+    font-size: 1em;
+  }  
+
+  .sec {
+    font-size: 1em;
+  }
 }
 
-section h2, h3, h4 {
-  color:#ffffff;
-  text-align: left;
-  text-shadow: 4px 4px 4px #ffffff;
-}
-section p {
-  text-align: justify;
-  color:#ffffff;
-  text-shadow: 3px 3px 3px black;  
-}
-.serviços a {
-  text-transform: capitalize;
-  vertical-align:middle;
-}
-.positioned {
-  position:sticky;
-  top: 400px;         
-}
+@media screen and (max-width: 360px) {  
+  .navigation,
+  .footer {
+    display: none;
+  }
 
-q { 
-  display :flex ;
-  text-align: center;
-  border : solid 1px #ffffff; 
-  vertical-align:middle;   float:right;  
-}
-hr {
-  color:#ffffff;
-  text-shadow: 3px 3px 3px white;
-}
-.reserva {  
-  font-size: medium;
-  padding: 2px 15px;  
-  text-shadow: 4px 4px 4px ;
-  color:royalblue;
-  float:right;  
-}
-h5 {
-  text-align:center;
-  font-size:large;
+  .sec {
+    font-size: 1em;
+  }
 }
