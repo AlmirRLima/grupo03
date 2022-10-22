@@ -1,0 +1,16 @@
+$arq_imgs:(
+"Festa do Caqui":"hall_beach01.jpg",
+"Festa do Caqui1":"hall_beach02.jpg",
+"Festa do Caqui2":"hall_beach03.jpeg",
+"Festa do Caqui3":"hall_beach03.jpg",
+"Festa do Caqui4":"hall_beach04.jpeg",
+"Festa do Caqui5":"hall_beach04.jpg",
+"Festa do Caqui6":"hall_beach05.jpeg",
+"Festa do Caqui7":"hall_beach05.jpg",
+"Festa do Caqui8":"hall_beach06.jpeg",
+"Festa do Caqui9":"hall_beach06.jpg",
+"Festa do Caqui10":"hall_beach07.jpeg",
+"Festa do Caqui11":"hall_beach08.jpeg",
+"Festa do Caqui12":"hall_beach09.jpeg",
+"Festa do Caqui13":"hall_beach10.jpeg")
+
