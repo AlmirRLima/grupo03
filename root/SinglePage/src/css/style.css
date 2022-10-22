@@ -1,0 +1,304 @@
+* {
+  font-family: "Ropa Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar__nav, .socialMedia__icones, .footer__socialMedia__icon {
+  list-style: none;
+}
+
+.header {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  background-image: url("/root/SinglePage/images/backgrounds/BANNER-CASANAPRAIA.png");
+  background-size: 100%;
+  background-position-y: -300px;
+}
+
+.header-heightMiddle {
+  height: 300px;
+  border: 1px solid #000;
+}
+
+.logo__slogan {
+  font-size: 3rem;
+  text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
+}
+
+.navbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar__link {
+  color: #f1f806;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.navbar__link:hover {
+  color: #fff;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.mx-1 {
+  margin: 0 1.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1170px) {
+  .header,
+.navbar__nav,
+.servicos,
+.servicos__card {
+    flex-flow: column;
+    min-width: 100%;
+  }
+  .socialMedia__icones {
+    flex-flow: column;
+  }
+  .socialMedia_item {
+    margin: 1rem;
+  }
+}
+.servicos {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.servicos__card {
+  width: 31%;
+  margin-right: 0.6rem;
+  margin-bottom: 1rem;
+  height: 400px;
+  box-shadow: 8px 8px 10px #999999;
+}
+
+.footer {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(152, 88, 64, 0.5);
+}
+.footer__navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(1, 1, 8, 0.6);
+}
+.footer__navbar__link {
+  text-decoration: none;
+  color: white;
+}
+.footer__navbar__nav {
+  list-style: none;
+  color: red;
+  flex-flow: column;
+}
+.footer__socialMedia__icon {
+  flex-flow: column;
+  color: #fff;
+  text-decoration: none;
+}
+
+#card1 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach01.jpg);
+  background-size: cover;
+}
+#card1 h2::before {
+  content: "Festa do Caqui";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach02.jpg);
+  background-size: cover;
+}
+#card2 h2::before {
+  content: "Festa do Caqui1";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach03.jpeg);
+  background-size: cover;
+}
+#card3 h2::before {
+  content: "Festa do Caqui2";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach03.jpg);
+  background-size: cover;
+}
+#card4 h2::before {
+  content: "Festa do Caqui3";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach04.jpeg);
+  background-size: cover;
+}
+#card5 h2::before {
+  content: "Festa do Caqui4";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach04.jpg);
+  background-size: cover;
+}
+#card6 h2::before {
+  content: "Festa do Caqui5";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card7 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach05.jpeg);
+  background-size: cover;
+}
+#card7 h2::before {
+  content: "Festa do Caqui6";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card8 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach05.jpg);
+  background-size: cover;
+}
+#card8 h2::before {
+  content: "Festa do Caqui7";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card9 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach06.jpeg);
+  background-size: cover;
+}
+#card9 h2::before {
+  content: "Festa do Caqui8";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card10 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach06.jpg);
+  background-size: cover;
+}
+#card10 h2::before {
+  content: "Festa do Caqui9";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card11 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach07.jpeg);
+  background-size: cover;
+}
+#card11 h2::before {
+  content: "Festa do Caqui10";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card12 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach08.jpeg);
+  background-size: cover;
+}
+#card12 h2::before {
+  content: "Festa do Caqui11";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card13 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach09.jpeg);
+  background-size: cover;
+}
+#card13 h2::before {
+  content: "Festa do Caqui12";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card14 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach10.jpeg);
+  background-size: cover;
+}
+#card14 h2::before {
+  content: "Festa do Caqui13";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
