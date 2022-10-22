@@ -5,30 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/root/src/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/root/src/css/style.css">
     <title>Hotel Casa de Praia</title>
 </head>
 
 <body>
     <nav>
         <header>
-            <div class="navigation">
+            <div class="navigation-drop">
+                <input class="dropbtn" type="checkbox" id="Menu">
+                <label class="navigation-drop-btn" for="Menu">Menu</label>
+                <div class="navigation-drop-content">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="pages/acomodacoes.html">Acomodações</a></li>
+                        <li><a href="pages/formulario.html">RESERVAS</a></li>
+                        <li><a href="admin/login_admincss.html">Area do Colaborador</a></li>
+                        <div class="campologindrop">
+                            <form action="campologin" method="post">                        
+                                <label for="login"><strong>USUARIO</strong></label>
+                                <input class="box1" type="email" name="login" id="login" required="required">
+                                <label for="password"><strong>SENHA</strong></label>
+                                <input class="box1" type="password" name="password" id="password" required="required">
+                                <input class="button" type="submit" value="OK"/>
+                                <br>
+                                <a class="links" href="">Cadastre-se</a>
+                                <a class="links" href="">Esqueceu sua senha?</a>   
+                            </form>                    
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div  id="inicio" class="navigation">
                 <div><a href="index.html" class="active">Home</a></div>
                 <div><a href="pages/acomodacoes.html">Acomodações</a></div>
                 <div><a href="pages/formulario.html">RESERVAS</a></div>
                 <div><a href="admin/login_admincss.html">Area do Colaborador</a></div>
-                <div class="campologin">
-                    <form action="campologin" method="post">                        
-                        <label for="login"><strong>USUARIO</strong></label>
-                        <input class="box1" type="email" name="login" id="login" required="required">
-                        <label for="password"><strong>SENHA</strong></label>
-                        <input class="box1" type="password" name="password" id="password" required="required">
-                        <input class="button" type="submit" value="OK"/>
-                        <br>
-                        <a class="links" href="">Cadastre-se</a>
-                        <a class="links" href="">Esqueceu sua senha?</a>   
-                    </form>                    
-                </div>
+            </div>
+            <div class="campologin">
+                <form action="campologin" method="post">                        
+                    <label for="login"><strong>USUARIO</strong></label>
+                    <input class="box1" type="email" name="login" id="login" required="required">
+                    <label for="password"><strong>SENHA</strong></label>
+                    <input class="box1" type="password" name="password" id="password" required="required">
+                    <input class="button" type="submit" value="OK"/>
+                    <br>
+                    <a class="links" href="">Cadastre-se</a>
+                    <a class="links" href="">Esqueceu sua senha?</a>   
+                </form>                    
             </div>
         </header>    
     </nav>
@@ -40,9 +64,8 @@
                 </div>
             </section>
             <section class="sec">
-                <h2>HOTEL CASA NA PRAIA</h2><br>
-                <h2 id="inicio"><b>BEM-VINDO</b></h2>
-                <h4>CONHEÇA O HOTEL</h4>
+                <h2><b>BEM-VINDO</b></h2>
+                <h3>CONHEÇA O HOTEL</h3>
                 <br>
                 <p>No Hotel Casa de Praia, você desfruta de uma das mais belas praias do Litoral    Norte de São Paulo, alinhando conforto e diversão com paisagens únicas das praias locais e a tranquilidade do nosso Hotel.
                     Para maior comodidade dos hóspedes, oferecemos estacionamento interno com cerca de 40 vagas, piscina, salão de festas e muito mais. Venha para o Casa de Praia.</p><br>
@@ -63,10 +86,10 @@
                 Também possuímos uma pequena área de jardim no jardim, e o jardim é usado para uma variedade de eventos,
                 como casamentos, festas de aniversário, festas de aniversário e ocasiões especiais.
 
-                    <br><br>Agora estamos oferecendo um café da manhã separado oferecido aos hóspedes do hotel, disponível pela manhã e à noite em nosso terraço.
-                    Também estamos felizes em receber reservas de grupos e agradecemos qualquer dúvida que você possa ter.
+                <br><br>Agora estamos oferecendo um café da manhã separado oferecido aos hóspedes do hotel, disponível pela manhã e à noite em nosso terraço.
+                Também estamos felizes em receber reservas de grupos e agradecemos qualquer dúvida que você possa ter.
                         <br>
-                        <div><hr><br>
+                        <div><br>
                             <h3 class="">Nossos Serviços</h3>
                             <br>
                             <p>Na praia de Ubatuba, que fica a menos de 50 metros do nosso hotel, o CASA NA PRAIA possui serviços de praia com gazebos a beira mar serviços como aluguel de stand up padlles e pranchas de surf. Além disso o serviço permite que o hospede faça pedidos que serão preparados direto pela cozinha do Hotel, mantendo a qualidade e higiene dos alimentos.</p>
