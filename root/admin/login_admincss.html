@@ -13,25 +13,49 @@
     <!--/Cabeçalho/MenuNavegação-->
     <nav>
         <header>
-            <div class="navigation">
-                <div><a href="/root/index.html">Home</a></div>
-                <div><a href="/root/pages/acomodacoes.html">Acomodações</a></div>
-                <div><a href="/root/pages/formulario.html">RESERVAS</a></div>
-                <div><a href="admin/login_admincss.html" class="active">Area do Colaborador</a></div>
-                <div class="campologin">
-                    <form action="campologin" method="post">                        
-                        <label for="login"><strong>USUARIO</strong></label>
-                        <input class="box1" type="email" name="login" id="login" required="required">
-                        <label for="password"><strong>SENHA</strong></label>
-                        <input class="box1" type="password" name="password" id="password" required="required">
-                        <input class="button" type="submit" value="OK"/>
-                        <br>
-                        <a class="links" href="">Não tem conta? Cadastre-se</a>
-                        <a class="links" href="">Esqueceu sua senha?</a>   
-                    </form>                    
+            <div class="navigation-drop">
+                <input class="dropbtn" type="checkbox" id="Menu">
+                <label class="navigation-drop-btn" for="Menu">Menu</label>
+                <div class="navigation-drop-content">
+                    <ul>
+                        <li><a href="/root/index.html">Home</a></li>
+                        <li><a href="pages/acomodacoes.html">Acomodações</a></li>
+                        <li><a href="pages/formulario.html">RESERVAS</a></li>
+                        <li><a href="login_admincss.html" class="active">Area do Colaborador</a></li>
+                        <div class="campologindrop">
+                            <form action="campologin" method="post">                        
+                                <label for="login"><strong>USUARIO</strong></label>
+                                <input class="box1" type="email" name="login" id="login" required="required">
+                                <label for="password"><strong>SENHA</strong></label>
+                                <input class="box1" type="password" name="password" id="password" required="required">
+                                <input class="button" type="submit" value="OK"/>
+                                <br>
+                                <a class="links" href="">Cadastre-se</a>
+                                <a class="links" href="">Esqueceu sua senha?</a>   
+                            </form>                    
+                        </div>
+                    </ul>
                 </div>
             </div>
-        </header>
+            <div  id="inicio" class="navigation">
+                <div><a href="/root/index.html" class="active">Home</a></div>
+                <div><a href="pages/acomodacoes.html">Acomodações</a></div>
+                <div><a href="pages/formulario.html">RESERVAS</a></div>
+                <div><a href="login_admincss.html">Area do Colaborador</a></div>
+            </div>
+            <div class="campologin">
+                <form action="campologin" method="post">                        
+                    <label for="login"><strong>USUARIO</strong></label>
+                    <input class="box1" type="email" name="login" id="login" required="required">
+                    <label for="password"><strong>SENHA</strong></label>
+                    <input class="box1" type="password" name="password" id="password" required="required">
+                    <input class="button" type="submit" value="OK"/>
+                    <br>
+                    <a class="links" href="">Cadastre-se</a>
+                    <a class="links" href="">Esqueceu sua senha?</a>   
+                </form>                    
+            </div>
+        </header>    
     </nav>
     <!--/Cabeçalho/MenuNavegação-->
         <main>        
@@ -71,11 +95,11 @@
             <p>
                 Todos os direitos reservados: HOTEL CASA NA PRAIA &copy                    
             </p>
-            <a class="links" href="#inicio">Voltar ao topo</a>
+            <a class="links" href="#Menu">Voltar ao topo</a>
         </div>
         <div class="menufooter">
             <h3>LINKS ÚTEIS</h3>
-            <a href="index.html" class="links">Home</a>
+            <a href="/root/index.html" class="links">Home</a>
             <a href="pages/acomodacoes.html" class="links">Acomodações</a>
             <a href="pages/formulario.html" class="links">RESERVAS</a>
         </div>
