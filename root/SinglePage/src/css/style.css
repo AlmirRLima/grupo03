@@ -15,7 +15,7 @@
   padding: 1.5rem 0;
   width: 90%;
   position: relative;
-  background-image: url("/images/backgrounds/background_home_2.jpg");
+  background-image: url("/root/SinglePage/images/backgrounds/BANNER-CASANAPRAIA.png");
   background-size: 100%;
   background-position-y: -300px;
 }
@@ -134,11 +134,11 @@
 }
 
 #card1 {
-  background-image: url(/images/produtos/beef-g66eb2a540_1920.jpg);
+  background-image: url(/root/SinglePage/images/produtos/hall_beach01.jpg);
   background-size: cover;
 }
 #card1 h2::before {
-  content: "Carne Grelhada";
+  content: "Festa do Caqui";
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -146,11 +146,11 @@
 }
 
 #card2 {
-  background-image: url(/images/produtos/breakfast-ga9b591474_1920.jpg);
+  background-image: url(/root/SinglePage/images/produtos/hall_beach02.jpg);
   background-size: cover;
 }
 #card2 h2::before {
-  content: "Bacon com Ovos";
+  content: "Festa do Caqui1";
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -158,11 +158,11 @@
 }
 
 #card3 {
-  background-image: url(/images/produtos/noodles-7390775_1920.jpg);
+  background-image: url(/root/SinglePage/images/produtos/hall_beach03.jpeg);
   background-size: cover;
 }
 #card3 h2::before {
-  content: "Penne a Bolonhesa";
+  content: "Festa do Caqui2";
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -170,11 +170,11 @@
 }
 
 #card4 {
-  background-image: url(/images/produtos/potato-soup-2152265_1920.jpg);
+  background-image: url(/root/SinglePage/images/produtos/hall_beach03.jpg);
   background-size: cover;
 }
 #card4 h2::before {
-  content: "Sopa de Batatas";
+  content: "Festa do Caqui3";
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -182,11 +182,11 @@
 }
 
 #card5 {
-  background-image: url(/images/produtos/rice-noodles-855077_1920.jpg);
+  background-image: url(/root/SinglePage/images/produtos/hall_beach04.jpeg);
   background-size: cover;
 }
 #card5 h2::before {
-  content: "Sopa de Arroz";
+  content: "Festa do Caqui4";
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -194,11 +194,11 @@
 }
 
 #card6 {
-  background-image: url(/images/produtos/salad-374173_1920.jpg);
+  background-image: url(/root/SinglePage/images/produtos/hall_beach04.jpg);
   background-size: cover;
 }
 #card6 h2::before {
-  content: "Salada Mix";
+  content: "Festa do Caqui5";
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -206,11 +206,11 @@
 }
 
 #card7 {
-  background-image: url(/images/produtos/salad-gf22844a91_1920.jpg);
+  background-image: url(/root/SinglePage/images/produtos/hall_beach05.jpeg);
   background-size: cover;
 }
 #card7 h2::before {
-  content: "Salada";
+  content: "Festa do Caqui6";
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -218,11 +218,11 @@
 }
 
 #card8 {
-  background-image: url(/images/produtos/salmon-g0bb6a9f46_1920.jpg);
+  background-image: url(/root/SinglePage/images/produtos/hall_beach05.jpg);
   background-size: cover;
 }
 #card8 h2::before {
-  content: "Salmon";
+  content: "Festa do Caqui7";
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -230,11 +230,11 @@
 }
 
 #card9 {
-  background-image: url(/images/produtos/spare-ribs-7410906_1920.jpg);
+  background-image: url(/root/SinglePage/images/produtos/hall_beach06.jpeg);
   background-size: cover;
 }
 #card9 h2::before {
-  content: "Costela Ribs";
+  content: "Festa do Caqui8";
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -242,11 +242,11 @@
 }
 
 #card10 {
-  background-image: url(/images/produtos/sushi-354628_1920.jpg);
+  background-image: url(/root/SinglePage/images/produtos/hall_beach06.jpg);
   background-size: cover;
 }
 #card10 h2::before {
-  content: "Sushi";
+  content: "Festa do Caqui9";
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -254,11 +254,47 @@
 }
 
 #card11 {
-  background-image: url(/images/produtos/taco-4709325_1920.jpg);
+  background-image: url(/root/SinglePage/images/produtos/hall_beach07.jpeg);
   background-size: cover;
 }
 #card11 h2::before {
-  content: "Taco";
+  content: "Festa do Caqui10";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card12 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach08.jpeg);
+  background-size: cover;
+}
+#card12 h2::before {
+  content: "Festa do Caqui11";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card13 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach09.jpeg);
+  background-size: cover;
+}
+#card13 h2::before {
+  content: "Festa do Caqui12";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card14 {
+  background-image: url(/root/SinglePage/images/produtos/hall_beach10.jpeg);
+  background-size: cover;
+}
+#card14 h2::before {
+  content: "Festa do Caqui13";
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
