@@ -1,0 +1,864 @@
+@use "mixins.scss" as mx;
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fff;
+  min-height: 100vh;
+
+}
+
+header {
+  position: absolute;
+  margin-top: 0.5em;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.2, 1, 0.2, 1) ease;
+}
+
+.logo {
+  color: #112434;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.navigation-drop,
+.navigation ul{
+  display: none;
+}
+
+.navigation-drop-btn {
+  background: transparent;
+  color: black;
+  padding: 6px 15px;
+  border-radius: 50px;
+  cursor:pointer;
+  right: 1vw;
+  top: 1vw;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1%;
+  gap: 1.5%;
+  box-sizing:border-box;
+  transition: all 0.3s ease;
+}
+
+.navigation div {
+  list-style: none;
+}
+
+.navigation div a {
+  text-decoration: none;
+  color: #112434;
+}
+
+.navigation div a:hover,
+.navigation div a.active {
+  background: #112434;
+  color: #fff;
+  padding: 0.3em;
+  border-radius: 50px;
+}
+
+.banner{
+  display: block; 
+  object-fit: cover; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.parallax img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4em;
+  color: #112434;
+  
+}
+
+.sec{
+  position: relative;
+  padding:2vw;
+  background: #112434;
+  transition: all 0.3s ease;
+}
+
+.sec h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.sec h3 {
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.sec h4 {
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.sec q {
+  color: #fff;
+}
+
+.sec p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+.sec img,
+.sec iframe {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.campologin,
+.campologindrop {
+  padding: 0.5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  width: 80%;
+  transition: all 0.3s ease;
+}
+
+.campologin a{
+  text-decoration: none;
+  color: #112434;
+}
+
+.campologin a:hover,
+.campologin a.active {
+  background: #112434;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.box1{
+  max-width: 10vw;
+}
+
+.footer {
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .redessociaisfooter img{
+  width: 3em;
+  height: 3em;
+}
+
+footer .logodireitosreservados img{
+  width: 7em;
+  height: 7em;
+}
+
+.redessociaisfooter {    
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.menufooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 10px;
+}
+
+.logodireitosreservados {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+}
+
+.direitosreservadosfooter {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+}
+
+h1 {
+font-size: 80px;
+color: aquamarine;
+text-shadow: #ffffff;
+text-shadow: 55px;
+}
+
+.formularios {
+background-color: #112434;
+color: #fff;
+padding: 10px;
+font-size: 1.25rem;
+}
+
+.formularios li {
+list-style-type: none;
+}
+
+.funcFormularios{
+background-color: #112434;
+color: #fff;
+padding: 1rem;
+font-size: 1.25rem;
+position: relative;
+
+}
+
+.funcLista{
+font-size: 1.5rem;
+list-style-type: none;
+}
+
+.funcLista input{
+padding-top: 0.3rem ;
+margin: 10px;
+}
+
+
+
+.equipesobrenos {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+}
+
+.fundosobrenos {
+font-size: 20px;
+color: aquamarine;
+text-shadow: #ffffff;
+text-shadow: 55px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #9df5cc 25%;
+}
+
+.button {
+  background: transparent;
+  color: black;
+  padding: 0.4em;
+  border-radius: 50px;
+  cursor:pointer;
+  overflow: hidden;
+  font-size: 1em;           
+}
+
+.button:hover{
+  background: #112434;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.4em;
+}
+
+.links {
+text-decoration: none;
+color: black;
+padding: 0.4em;
+}
+
+/* Ajustes por Fernando Rodrigues Cervantes. somente inclusão do @media e ajustes em .acomodacoes */
+
+@media (max-width: 1170px) {
+  .acomodacoes,
+  .acomodacoes__card {
+    flex-flow: column;
+    min-width: 100%;
+  }
+}
+
+.acomodacoes {
+  @include mx.box;
+  @include mx.flex-center;
+  flex-wrap: wrap;
+  //justify-content:start;
+  justify-content: space-around;
+  display: contents;
+  //justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.acomodacoes acTable {
+  border: 0px solid;
+  width: 100%;
+}
+
+.acomodacoes p {
+  color: #fff;
+  font-size: medium;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  padding: 1px 1px 1px 1px;
+}
+
+.acomodacoes h1 {
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  /*display: contents;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  text-align: center; */
+}
+
+.acomodacoes h2 {
+  font-size: 20px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*display: contents;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;*/
+}
+
+.acomodacoes h3 {
+  font-size: 15px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  /* display: contents;
+  justify-content: left;
+  align-items: left;
+  padding-top: 25px; */
+}
+
+.acomodacoes h4 {
+  font-size: 20px;
+  display: contents;
+  // color: #ffffff;
+  color:red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: left;
+  align-items: left;
+  padding-top: 25px;
+}
+
+.acomodacoes img {
+  border-radius: 8px;
+  box-sizing: border-box;
+  /* border-radius: 50%; */
+  width: 15%;
+  height: auto;
+  align-items: center;
+}
+
+.acomodacoes img:hover {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2);
+}
+
+.acomodacoes tdLeft {
+  align-items: center;
+  vertical-align: top;
+  width: 30%;
+}
+
+.acomodacoes tdRight {
+  align-items: left;
+  vertical-align: top;
+  width: 70%;
+}
+
+.acomodacoes p1 {
+  color: #ffffff;
+  // color: red;
+  margin-top:10px;
+  margin-bottom: 10px;
+  text-justify: left;
+  padding: 1px 1px 1px 1px;
+  // border: 10px solid black;
+  // align-content: right;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.acomodacoes p2 {
+  font-size: large;
+  font-weight: 500;
+  font-style: italic;
+  color: #f09c83;
+  margin-bottom: 10px;
+  align-content: right;
+  align-items: center;
+  justify-content: center;
+  text-justify: center;
+}
+
+.acomodacoes input {
+  /* background: transparent; */
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: larger;
+  color: rgb(7, 1, 39);
+  padding: 6px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.acomodacoes input:hover {
+  background: #07033f;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 6px 15px;
+}
+
+.bodylogin {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center
+    center;
+  background-size: cover;
+  height: 89vh;
+}
+
+.bodylogin div {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 80px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.bodylogin h1 {
+  position: center;
+  top: 30%;
+  left: 30%;
+}
+
+.bodylogin input {
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.bodylogin a {
+  background-color: dodgerblue;
+  border: none;
+  padding: 5% 40%;
+  width: 140%;
+  height: 140%;
+  border-radius: 15px;
+  color: white;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+.bodylogin a:hover {
+  background-color: deepskyblue;
+}
+
+.bodylogin .btn-link {
+  text-decoration: none;
+}
+
+.pagination {
+  display: inline-block;
+  text-align: center;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+  
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 985px) {
+  .box1{
+    max-width: 10em;
+    font-size: 0.8em;
+  }
+
+  .campologin {
+    display: block;
+    padding: 1%;
+    box-sizing: border-box;    
+    font-size: 1em;
+    max-width: min-content;
+  }
+
+  .campologin .button{
+    font-size: 1.2vw;
+  }
+
+  .navigation,  
+  .footer {
+    font-size: 1em;
+  }  
+
+  .sec {
+    font-size: 1em;
+  }
+  
+  html, body{
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  
+  .navigation {
+    display: block;
+  }
+  .box1{
+    max-width: 10em;
+    font-size: 0.8em;
+  }
+
+  .campologin {
+    display: block;
+    padding: 1%;
+    box-sizing: border-box;    
+    font-size: 1em;
+    max-width: min-content;
+  }
+
+  .campologin .button{
+    font-size: 1em;
+  }
+
+  .navigation,  
+  .footer {
+    font-size: 1em;
+  }  
+
+  .sec {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 719px) and (orientation:portrait) {  
+  .navigation,
+  .footer,
+  .campologin {
+    display: none;
+  }
+
+  .sec {
+    font-size: 1em;
+  }
+
+  html, body{
+    overflow-x: hidden;
+  }
+
+  .dropbtn{
+    display: none;
+  }    
+
+  .campologindrop {
+    display: block;
+    padding: 1%;
+    box-sizing: border-box;    
+    font-size: 1em;
+    max-width: min-content;
+  }
+
+  .navigation-drop {
+    padding: 1%;
+    display: inline-block;
+    position: fixed;
+  }
+
+  .navigation-drop-btn {
+    background: transparent;
+    color: black;
+    padding: 0.3em;
+    border-radius: 50px;
+    cursor:pointer;
+    overflow: hidden;  
+    right: 1vw;
+    top: 1vw;
+    font-size: 1em;
+  }
+
+  .dropbtn:checked ~ .navigation-drop-content{
+    -webkit-transform: translate(300px);
+      -moz-transform: translate(300px);
+        -ms-transform: translate(300px);
+          -o-transform: translate(300px);
+            transform: translate(300px);
+  }
+
+  .navigation-drop-btn:hover,
+  .navigation-drop-btn:active,
+  .navigation-drop-content ul a:hover{
+    background: #112434;
+    color: #fff;
+    border-radius: 50px;
+    padding: 0.4em;
+  }
+
+  .navigation-drop-content {    
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    border: 5px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, .3);
+    line-height: 1.5;
+    left: -300px;  
+    -webkit-transition: all 0.25s linear;
+      -moz-transition: all 0.25s linear;
+        -ms-transition: all 0.25s linear;
+          -o-transition: all 0.25s linear;
+            transition: all 0.25s linear;
+  }
+  
+  .navigation-drop-content ul a,
+  .navigation-drop-content ul li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+  }
+
+}
+
+/* botão */
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+/* 1 */
+.btn {
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  font-size: 1rem;
+}
+.btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  color: rgb(255, 5, 5);
+}
+.btn:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn:active {
+  top: 2px;
+}
+
+
+// ajuste para página de acomodacoes...
+/* */
+/* ----------------------- Fernando R Cervantes -------------------------*/
+/* CSS Acomodacoes */
+
+.acomodacoes {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.acomodacoes_card {
+  width: 15%;
+  height: 100px;
+  margin-right: 0.6rem;
+  margin-bottom: 1rem; // v.$m1 - substituir por paramentro arquivo de variaveis!!!
+  /* box-shadow: 8px 8px 10px #999999; */
+  border-radius: 8px;
+  box-sizing: border-box;
+  // margin:v.$mx1;
+  //border:1px solid #000;
+}
+
+.acomodacoes_card:hover {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+/* CARDS de Acomodacoes...*/
+/* CARDS - MASTER */
+$imgs_master: (
+  "Premium Master Suite Quarto": "/root/images/jpeg/roomImage01.jpg",
+  "Premium Master Suite Banheiro": "/root/images/jpeg/banheiro04.jpg",
+  "Premium Master Suite Cozinha": "/root/images/jpeg/cozinha_master.jpeg",
+  "Premium Master Suite Sala": "/root/images/jpeg/roomsofa01.jpeg",
+  "Premium Master Suite Sala 2": "/root/images/jpeg/roomsofa03.jpeg",
+  "Premium Master Suite Sacada": "/root/images/jpeg/balcony_master.jpg",
+);
+
+$n: 0;
+@each $titulo, $url in $imgs_master {
+  $n: $n + 1;
+  #acomodacoes_card_imgMaster#{$n} {
+    background-image: url(#{$url});
+    background-size: cover;
+
+    /*& h2::before {
+      content: "#{$titulo}";
+      font-size: 5pix;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      padding: 1rem 0.5rem;
+    } */
+  }
+}
+
+/* CARDS - Familia */
+$imgs_familia: (
+  "Família Suite Quarto": "/root/images/png/room02_family.jpg",
+  "Família Suite Banheiro": "/root/images/jpeg/banheiro04.jpg",
+  "Família Suite Cozinha": "/root/images/jpeg/cozinha_family.jpg",
+  "Família Suite Quarto 2": "/root/images/jpeg/roomImage01.jpeg",
+  "Família Suite Quarto 3": "/root/images/jpeg/roomImage02.jpeg",
+  "Família Suite Quarto 4": "/root/images/jpeg/roomImage05.jpeg",
+);
+
+$n: 0;
+@each $titulo, $url in $imgs_familia {
+  $n: $n + 1;
+  #acomodacoes_card_imgFamilia#{$n} {
+    background-image: url(#{$url});
+    background-size: cover;
+
+    /* & h2::before {
+      content: "#{$titulo}";
+      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      padding: 1rem 0.5rem;
+    } */
+  }
+}
+
+/* CARDS - Single */
+$imgs_single: (
+  "Economic Single Quarto": "/root/images/png/room4_basic.jpg",
+  "Economic Single Cozinha": "/root/images/jpeg/cozinha_single.jpeg",
+  "Economic Single Banheiro": "/root/images/jpeg/bathrooms_single01.jpg",
+  "Economic Single Quarto 2": "/root/images/jpeg/people_single01.jpg",
+  "Economic Single Quarto 3": "/root/images/jpeg/roomImage07.jpeg",
+  "Economic Single Sacada": "/root/images/jpeg/balcony_single.jpg",
+);
+
+$n: 0;
+@each $titulo, $url in $imgs_single {
+  $n: $n + 1;
+  #acomodacoes_card_imgSingle#{$n} {
+    background-image: url(#{$url});
+    background-size: cover;
+
+    /*& h2::before {
+      content: "#{$titulo}";
+      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      padding: 1rem 0.5rem;
+    } */
+  }
+}
