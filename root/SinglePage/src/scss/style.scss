@@ -1,0 +1,165 @@
+@use "variaveis.scss" as v;
+@use "mixins.scss" as mx;
+@use "extends.scss";
+
+.header {
+  @include mx.box;
+  background-image: url(v.$bgHome);
+  background-size: 100%;
+  background-position-y: -300px;
+}
+.header-heightMiddle {
+  height: 300px;
+  border: 1px solid #000;
+}
+.logo__slogan {
+  font-size: 3rem;
+  text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
+}
+
+.navbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: v.$bgColorNav;
+}
+
+// &__nav {
+.navbar__nav{
+  @extend %list-none;
+}
+
+// &__link {
+.navbar__link {
+  color: v.$link;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    color: v.$linkHover;
+  }
+}
+
+.socialMedia__icones {
+  // list-style: none;
+  @extend %list-none;
+}
+
+.m-1 {
+  margin: v.$m1;
+}
+.mx-1 {
+  margin: v.$mx1;
+}
+.p-1 {
+  padding: v.$p1;
+}
+.text-white {
+  color: v.$linkHover;
+}
+
+.container {
+  @include mx.flex-center;
+}
+
+@media (max-width: 1170px) {
+  .header,
+  .navbar__nav,
+  .servicos,
+  .servicos__card {
+    flex-flow: column;
+    min-width: 100%;
+  }
+  .socialMedia__icones {
+    flex-flow: column;
+  }
+  .socialMedia_item {
+    margin: v.$m1;
+  }
+}
+
+.servicos {
+  @include mx.box;
+  @include mx.flex-center;
+  flex-wrap: wrap;
+  //justify-content:start;
+  justify-content: space-around;
+}
+
+.servicos__card {
+  width: 31%;
+  margin-right: 0.6rem;
+  // margin:v.$mx1;
+  margin-bottom: v.$m1;
+  height: 400px;
+  //border:1px solid #000;
+  box-shadow: 8px 8px 10px #999999;
+}
+
+.footer {
+  @include mx.box;
+  @include mx.flex-center;
+  background-color: rgba(152, 88, 64, 0.5);
+
+  &__navbar {
+    @include mx.flex-center;
+    background-color: rgba(1, 1, 8, 0.6);
+    &__link {
+      text-decoration: none;
+      color: #ffff;
+    }
+    &__nav {
+      //@extend %list-none;
+      list-style: none;
+      color: red;
+      flex-flow: column;
+    }
+  }
+  &__socialMedia {
+
+    &__icon {
+      flex-flow: column;
+      @extend %list-none;
+      color: #fff;
+      text-decoration: none;
+
+    }
+  }
+}
+
+$imgs: (
+  "Carne Grelhada": "beef-g66eb2a540_1920.jpg",
+  "Bacon com Ovos": "breakfast-ga9b591474_1920.jpg",
+  "Penne a Bolonhesa": "noodles-7390775_1920.jpg",
+  "Sopa de Batatas": "potato-soup-2152265_1920.jpg",
+  "Sopa de Arroz": "rice-noodles-855077_1920.jpg",
+  "Salada Mix": "salad-374173_1920.jpg",
+  "Salada": "salad-gf22844a91_1920.jpg",
+  "Salmon": "salmon-g0bb6a9f46_1920.jpg",
+  "Costela Ribs": "spare-ribs-7410906_1920.jpg",
+  "Sushi": "sushi-354628_1920.jpg",
+  "Taco": "taco-4709325_1920.jpg",
+);
+
+$n: 0;
+
+@each $titulo, $url in $imgs {
+  $n: $n + 1;
+  #card#{$n} {
+    background-image: url(/images/produtos/#{$url});
+    background-size: cover;
+
+    & h2::before {
+      content: "#{$titulo}";
+      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      padding: 1rem 0.5rem;
+    }
+  }
+}
+
+// .logo__slogan{
+//     color:v.$link;
+// }
