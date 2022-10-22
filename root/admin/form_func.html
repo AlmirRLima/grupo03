@@ -32,74 +32,103 @@
         <section class="sec">
             <h2>ATENDIMENTO FUNCIONÁRIOS</h2>
             <form>
-                <fieldset class="formularios">
-                    <legend>Preencha todos os campos</legend>
+                <fieldset class="funcFormularios">
                     <h3>Suas informações</h3>
                     <br>
                     <div class="campo">
-                        <label for="codigoFunc">Código de Funcionário</label>
-                        <input type="text" id="codigoFunc" name="codigoFunc" maxlength="10" size="10" autofocus
-                            placeholder="Código funcionário" required />
-                        <label for="nomeFunc">Nome</label>
-                        <input type="text" id="nomeFunc" name="nomeFunc" maxlength="30" size="50" autofocus
-                            placeholder="Seu nome completo" required />
-                        <label for="emailFunv">eMail</label>
-                        <input type="email" id="emailFunc" name="emailFunc" placeholder="Seu email mais usado"
-                            required />
-                        <label for="anosEmpresa">Seu tempo na empresa</label>
-                        <input type="number" id="anosEmpresa" name="anosEmpresa" required min="1" max="30" />Anos
-                        <input type="number" id="mesesEmpresa" name="mesesEmpresa" required min="1" max="12" />Meses
+                        <ul class="funcLista">
+                            <li>
+                                <label for="codigoFunc">Código de Funcionário: </label>
+                                <input type="text" id="codigoFunc" name="codigoFunc" maxlength="10" size="10" autofocus
+                                    placeholder="Código funcionário" required  />
+                            </li>
+                            <li>
+                                <label for="nomeFunc">Nome: </label>
+                                <input type="text" id="nomeFunc" name="nomeFunc" maxlength="30" size="50" autofocus
+                                    placeholder="Seu nome completo" required />
+                            </li>
+                            <li>
+                                <label for="emailFunv">eMail: </label>
+                                <input type="email" id="emailFunc" name="emailFunc" maxlength="30" size="50" placeholder="Seu email mais usado"
+                                    required />
+                            </li>
+                            <li>
+                                <label for="anosEmpresa">Seu tempo na empresa: </label>
+                                <input type="number" id="anosEmpresa" name="anosEmpresa" required min="1" max="30" style="padding: 2px;" />Anos
+                                <input type="number" id="mesesEmpresa" name="mesesEmpresa" required min="1" max="12" style="padding: 2px;"/>Meses
+                            </li>
+                            <li>
+                                <label for="areaEmpresa">Sua área atual: </label>
+                                <select name="areaEmpresa" id="areaEmpresa">
+                                    <option value="...">...</option>
+                                    
+                                    <optgroup label="Operação">
+                                        <option value="areaRecepcao">Recepção</option>
+                                        <option value="areaRestaurante">Restaurante</option>
+                                        <option value="areaGaragem">Garagem</option>
+                                        <option value="areaServicoQuarto">
+                                            Serviço de Quarto
+                                        </option>
+                                    </optgroup>
+                                    
+                                    <optgroup label="Gestão">
+                                        <option value="areaGerencia">Gerencia</option>
+                                        <option value="areaSupervisor">Supervisor</option>
+                                        <option value="areaConcierge">Concierge</option>
+                                    </optgroup>
+                                </select>
+                            </li>
+                            <li>    
+                                <button class="custom-btn btn">Enviar</button>
+                            </li>
+                        </ul>
                     </div>
+                   
+                  
                     <br>
-                    <div class="campo">
-                        <label for="areaEmpresa">Sua área atual</label>
-                        <select name="areaEmpresa" id="areaEmpresa">
-                            <option value="...">...</option>
-                            <option value="operacao">Operação</option>
-                            <optgroup label="Operação">
-                                <option value="areaRecepcao">Recepção</option>
-                                <option value="areaRestaurante">Restaurante</option>
-                                <option value="areaGaragem">Garagem</option>
-                                <option value="areaServicoQuarto">
-                                    Serviço de Quarto
-                                </option>
-                            </optgroup>
-                            <option value="gestao">Gestão</option>
-                            <optgroup label="Gestão">
-                                <option value="areaGerencia">Gerencia</option>
-                                <option value="areaSupervisor">Supervisor</option>
-                                <option value="areaConcierge">Concierge</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                    <br>
-                    <hr>
-                    </hr>
+                   
+                </fieldset>
+                <br>
+                <fieldset class="funcFormularios">
                     <h3>Solicitação de Férias</h3>
                     <br>
                     <div class="campo">
-                        <label for="servicosFerias>">Ferias vencidas?</label>
-                        <input checked type="radio" name="feriasVencidas" id="feriasVencidasSim"
-                            style="accent-color: green" />Sim
-                        <input type="radio" name="feriasVencidas" id="feriasVencidasNao" style="accent-color: red" />Não
-                        <p>
-                            Você pode escolher entre dividir suas férias em 15 ou 20
-                            dias ou tirar 30 dias, converse com seu gestor!
-                        </p>
-                        <label for="feriasDias>">Quantidade de dias</label>
-                        <input checked type="radio" name="feriasDias" id="ferias15" style="accent-color: green" />15 e
-                        15 dias
-                        <input type="radio" name="feriasDias" id="ferias20" style="accent-color: green" />20 e 10 dias
-                        <input type="radio" name="feriasDias" id="ferias30" style="accent-color: green" />30 dias
-                        <label for="feriasPeriodoDe">Periodo das férias de...</label>
-                        <input type="date" name="feriasPeriodoDe" id="feriasPeriodoDe" />
-                        <label for="feriasPeriodoAte">até...</label>
-                        <input type="date" name="feriasPeriodoAte" id="feriasPeriodoAte" />
-
-
+                        <ul class="funcLista">
+                            <li>
+                                <label for="servicosFerias>">Ferias vencidas?</label>
+                                <input checked type="radio" name="feriasVencidas" id="feriasVencidasSim"
+                                    style="accent-color: green" />Sim
+                                <input type="radio" name="feriasVencidas" id="feriasVencidasNao" style="accent-color: red" />Não
+                            </li>
+                            <li>
+                                <p>
+                                    Você pode escolher entre dividir suas férias em 15 ou 20
+                                    dias ou tirar 30 dias, converse com seu gestor!
+                                </p>
+                            </li>
+                            <li>
+                                <label for="feriasDias>">Quantidade de dias: </label>
+                                <select name="feriasdias" id="feriasdias" maxlength="30" size="1" >
+                                    <option value="...">...</option>
+                                    <option value="1515">15 e 15</option>
+                                    <option value="2010">20 e 10</option>
+                                    <option value="30d">30 dias</option>
+                                </select>
+                                <label for="feriasPeriodoDe">Periodo das férias de...</label>
+                                <input type="date" name="feriasPeriodoDe" id="feriasPeriodoDe" />
+                                <label for="feriasPeriodoAte">até...</label>
+                                <input type="date" name="feriasPeriodoAte" id="feriasPeriodoAte" />
+                            </li>
+                            <li>    
+                                <button class="custom-btn btn">Enviar</button>
+                            </li>
+                        </ul>
+                        
                     </div>
                     <br>
-                    <hr>
+                </fieldset>
+                <br>
+                <fieldset class="funcFormularios">  
                     <h3>Afastamento Médico</h3>
                     <br>
                     <p>
@@ -107,23 +136,34 @@
                         envie aqui o atestado justificando o afastamento.
                     </p>
                     <div class="campo">
-                        <label for="afastamentoPeriodoDe">Periodo de afastamento de...</label>
-                        <input type="date" name="afastamentoPeriodoDe" id="afastamentoPeriodoDe" />
-                        <label for="afastamentoPeriodoAte">até...</label>
-                        <input type="date" name="afastamentoPeriodoAte" id="afastamentoPeriodoAte" />
-                        <br>
-                        <label for="afastamentoObs">Observações Adicionais</label>
-                        <br />
-                        <textarea name="afastamentoObs" id="afastamentoObs" cols="30" rows="10"></textarea>
-                        <br>
-                        <label for="atestado">Envie o atestado médico</label><br />
-                        <input type="file" id="atestado" name="aniversariante" accept="accept="
-                            .csv,.pdf,.doc,image/*" />
-                        <br>
-                        <button>Enviar</button>
+                        <ul class="funcLista">
+                            <li>
+                                <label for="afastamentoPeriodoDe">Periodo de afastamento de...</label>
+                                <input type="date" name="afastamentoPeriodoDe" id="afastamentoPeriodoDe" />
+                                <label for="afastamentoPeriodoAte">até...</label>
+                                <input type="date" name="afastamentoPeriodoAte" id="afastamentoPeriodoAte" />
+                            </li>
+                            <br>
+                            <li>
+                                <label for="afastamentoObs">Observações Adicionais</label>
+                            </li>
+                            <br />
+                            <li>
+                                <textarea name="afastamentoObs" id="afastamentoObs" cols="70" rows="10"></textarea>
+                            </li>
+                            <br>
+                            <li>
+                                <label for="atestado">Envie o atestado médico</label><br />
+                                <input type="file" id="atestado" name="aniversariante" accept="accept="
+                                    .csv,.pdf,.doc,image/*" />
+                                <br>
+                            </li>
+                            <button class="custom-btn btn">Enviar</button>
+                        </ul>
                     </div>
+                    </fieldset>  
                     <br>
-                    <hr>
+                <fieldset class="funcFormularios">  
                     <div class="campo">
                         <h3>Fale com o RH!</h3>
                         <p>
@@ -132,25 +172,28 @@
                             <strong>voluptatibus</strong> consequuntur nam velit a quis suscipit
                             voluptatem neque laborum repudiandae!
                         </p>
-                        <form action="" method="post">
-                            <fieldset>
-                                <legend>Como podemos te ajudar?</legend>
-                                <label for="nome_mensagem">Nome:</label>
-                                <input type="name" id="nome_mensagem"
-                                    placeholder="JOSE DA SILVA - MATRICULA 999.9999" />
-                                <br>
-                                <label for="email_mensagem">EMail:</label>
-                                <input type="email" id="email_mensagem" placeholder="josedasilva@casanapraia.com.br" />
-                                <br>
-                                <label for="telefone_mensagem">Tel:</label>
-                                <input type="telefone" id="telefone_mensagem" placeholder="Seu telefone aqui"
-                                    required />
-                                <br>
-                                <label for="faleRhObs">Sua mensagem para nós!</label>
-                                <br />
-                                <textarea name="faleRhObs" id="faleRhObs" cols="30" rows="10"></textarea>
-                                <br>
-                                <button>Enviar</button>
+                        <br>
+                        
+                        <ul class="funcLista">
+                            
+                            <legend>Como podemos te ajudar?</legend>
+                            <label for="nome_mensagem">Nome:</label>
+                            <input type="name" id="nome_mensagem"
+                                placeholder="JOSE DA SILVA - MATRICULA 999.9999" maxlength="30" size="32" />
+                            <br>
+                            <label for="email_mensagem">EMail:</label>
+                            <input type="email" id="email_mensagem" placeholder="josedasilva@casanapraia.com.br" maxlength="30" size="32"  />
+                            <br>
+                            <label for="telefone_mensagem">Tel:</label>
+                            <input type="telefone" id="telefone_mensagem" placeholder="Seu telefone aqui"
+                                required maxlength="30" size="30" />
+                            <br>
+                            <label for="faleRhObs">Sua mensagem para nós!</label>
+                            <br />
+                            <textarea name="faleRhObs" id="faleRhObs" cols="70" rows="10"></textarea>
+                            <br>
+                            <button class="custom-btn btn">Enviar</button>
+                        </ul>
                     </div>
                 </fieldset>
                 <br>
