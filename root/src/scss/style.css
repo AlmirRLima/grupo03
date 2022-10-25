@@ -51,8 +51,7 @@ header {
 .navigation {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   padding: 1%;
   gap: 1.5%;
@@ -143,7 +142,7 @@ header {
 
 .sec img,
 .sec iframe {
-  width: 20vw;
+  width: 35vw;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -158,8 +157,6 @@ header {
   align-items: left;
   width: 80%;
   transition: all 0.3s ease;
-  align-content: center;
-  flex-wrap: wrap;
 }
 
 .campologin a {
@@ -580,8 +577,8 @@ h1 {
 }
 @media (max-width: 719px) and (orientation: portrait) {
   .navigation,
-  .footer,
-  .campologin {
+.footer,
+.campologin {
     display: none;
   }
   .sec {
@@ -624,8 +621,8 @@ h1 {
     transform: translate(300px);
   }
   .navigation-drop-btn:hover,
-  .navigation-drop-btn:active,
-  .navigation-drop-content ul a:hover {
+.navigation-drop-btn:active,
+.navigation-drop-content ul a:hover {
     background: #112434;
     color: #fff;
     border-radius: 50px;

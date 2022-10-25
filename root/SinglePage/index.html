@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Casa na Praia</title>
-    <link rel="stylesheet" href="../SinglePage/src/css/style.css" />
+    <link rel="stylesheet" href="/root/SinglePage/src/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,53 +19,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="http://fonts.cdnfonts.com/css/nightmare-story" rel="stylesheet">
   </head>
   <body>
     <header class="containerBox header header-bgHome header-heightMiddle">
       <!-- logo, barra de navegação e seleção de midia social -->
       <div class="container">
-        <div class="logo">
-          <p class="logo__slogan text-white px-1">Halloween</p>
+        <div>
+          <img src="/root/images/png/logo.png" alt="">
         </div>
-        <div class="socialMedia">
-          <ul class="socialMedia__icones container">
-            <li class="socialMedia__item">
-              <a href="#" class="socialMedia link text-white">
-                <i class="socialMedia_icon fab fa-facebook fa-3x mx-1"></i>
-              </a>
-            </li>
-            <li class="socialMedia__item">
-              <a href="#" class="socialMedia link text-white">
-                <i class="socialMedia_icon fab fa-instagram fa-3x mx-1"></i>
-              </a>
-            </li>
-            <li class="socialMedia__item">
-              <a href="#" class="socialMedia link text-white">
-                <i class="socialMedia_icon fab fa-whatsapp fa-3x mx-1"></i>
-              </a>
-            </li>
-          </ul>
+        <div class="logo">
+          <h2 class="logo__slogan text-white px-1">Halloween</h1>
+          <P class="logo__slogan text-white px-1">Festa tematica de Halloween</P>
+          <p class="logo__slogan text-white px-1">Open bar</p>
+          <p class="logo__slogan text-white px-1">Fantasias para toda familia</p>
+          <p class="logo__slogan text-white px-1">Brincadeira tematicas</p>
+          <p class="logo__slogan text-white px-1">DJs e bandas ao vivo</p>
         </div>
       </div>
-      <nav class="navbar">
-        <ul class="navbar__nav container p-1">
-          <li class="navbar_item">
-            <a href="#" class="navbar__link">Home</a>
-          </li>
-          <li class="navbar_item">
-            <a href="#" class="navbar__link">Nossos pratos</a>
-          </li>
-          <li class="navbar_item">
-            <a href="#" class="navbar__link">Sobre</a>
-          </li>
-          <li class="navbar_item">
-            <a href="#" class="navbar__link">Reservas</a>
-          </li>
-          <li class="navbar_item">
-            <a href="#" class="navbar__link">Carrinho</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <div class="servicos">
@@ -85,27 +56,7 @@
           <h2 class="card__titulo_"></h2>
           <a href="" id="card__btn"></a>
         </div>
-        <div id="card5" class="servicos__card card">
-          <h2 class="card__titulo_"></h2>
-          <a href="" id="card__btn"></a>
-        </div>
-        <div id="card6" class="servicos__card card">
-          <h2 class="card__titulo_"></h2>
-          <a href="" id="card__btn"></a>
-        </div>
-        <div id="card7" class="servicos__card card">
-          <h2 class="card__titulo_"></h2>
-          <a href="" id="card__btn"></a>
-        </div>
-        <div id="card8" class="servicos__card card">
-          <h2 class="card__titulo_"></h2>
-          <a href="" id="card__btn"></a>
-        </div>
-        <div id="card9" class="servicos__card card">
-          <h2 class="card__titulo_"></h2>
-          <a href="" id="card__btn"></a>
-        </div>
-      </div>
+      </div>      
     </main>
     <footer>
       <div class="footer">
@@ -134,35 +85,52 @@
             </li>
           </ul>
         </div>
+        <div>
+          <form class="footer_form" action="" method="post">
+            <fieldset class="">
+                <p>Fale conosco através de nossas redes sociais, telefone, ou preencha o formulário abaixo.</p>
+                <br />
+                <label for="nome_mensagem">Nome:</label>
+                <input
+                    type="name"
+                    id="nome_mensagem"
+                    placeholder="JOSE DA SILVA - MATRICULA 999.9999"/>
+                    <br>
+                <label for="email_mensagem">E-mail:</label>
+                <input
+                    type="email"
+                    id="email_mensagem"
+                    placeholder="josedasilva@casanapraia.com.br"/>
+                    <br>
+                <label for="telefone_mensagem">Tel:</label>
+                <input
+                    type="telefone"
+                    id="telefone_mensagem"
+                    placeholder="Seu telefone aqui"
+                    required/>
+                    <br>
+                <button>Enviar</button>
+                <br>                 
+            </fieldset>
+            <br>
+          </form>
+        </div>
         <div class="footer_contato">
-          <div class="logo">
-            <p class="logo__slogan text-white px-1">Ristorante</p>
-          </div>
-          <div class="contato_info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ab
-            repellat facilis vero voluptates sapiente in consequatur, laudantium
-            placeat inventore?
-          </div>
           <nav class="footer__navbar">
             <ul class="footer__navbar__nav container p-1">
               <li class="footer__navbar_item">
-                <a href="#" class="footer__navbar__link">Home</a>
+                <a href="#" class="footer__navbar__link">CONHEÇA O HOTEL</a>
               </li>
               <li class="footer__navbar_item">
-                <a href="#" class="footer__navbar__link">Nossos pratos</a>
-              </li>
-              <li class="footer__navbar_item">
-                <a href="#" class="footer__navbar__link">Sobre</a>
-              </li>
-              <li class="footer__navbar_item">
-                <a href="#" class="footer__navbar__link">Reservas</a>
-              </li>
-              <li class="footer__navbar_item">
-                <a href="#" class="footer__navbar__link">Carrinho</a>
+                <a href="#" class="footer__navbar__link">RESERVAS</a>
               </li>
             </ul>
           </nav>
-        </div>
+        </div>        
+      </div>
+      <div class="logo">
+        <img src="/root/images/png/logo.png" alt="">
+        <p class="logo__slogan text-white px-1">Todos os direitos reservados: HOTEL CASA NA PRAIA &copy</p>
       </div>
     </footer>
   </body>
