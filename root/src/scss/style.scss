@@ -36,7 +36,7 @@ header {
 }
 
 .navigation-drop,
-.navigation ul{
+.navigation ul {
   display: none;
 }
 
@@ -45,7 +45,7 @@ header {
   color: black;
   padding: 6px 15px;
   border-radius: 50px;
-  cursor:pointer;
+  cursor: pointer;
   right: 1vw;
   top: 1vw;
 }
@@ -57,7 +57,7 @@ header {
   width: 100%;
   padding: 1%;
   gap: 1.5%;
-  box-sizing:border-box;
+  box-sizing: border-box;
   transition: all 0.3s ease;
 }
 
@@ -78,11 +78,11 @@ header {
   border-radius: 50px;
 }
 
-.banner{
-  display: block; 
-  object-fit: cover; 
-  width: 100%; 
-  height: 100%; 
+.banner {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .parallax {
@@ -107,12 +107,12 @@ header {
   transform: translateY(-50%);
   font-size: 4em;
   color: #112434;
-  
+
 }
 
-.sec{
+.sec {
   position: relative;
-  padding:2vw;
+  padding: 2vw;
   background: #112434;
   transition: all 0.3s ease;
 }
@@ -162,7 +162,7 @@ header {
   transition: all 0.3s ease;
 }
 
-.campologin a{
+.campologin a {
   text-decoration: none;
   color: #112434;
 }
@@ -174,7 +174,7 @@ header {
   border-radius: 50px;
 }
 
-.box1{
+.box1 {
   max-width: 10vw;
 }
 
@@ -185,20 +185,23 @@ header {
   align-items: center;
 }
 
-footer .redessociaisfooter img{
+footer .redessociaisfooter img {
   width: 3em;
   height: 3em;
+  padding: 3em;
+  display: flex;
 }
 
-footer .logodireitosreservados img{
+footer .logodireitosreservados img {
   width: 7em;
   height: 7em;
 }
 
-.redessociaisfooter {    
+.redessociaisfooter {
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 100px;
+  display: flex;
 }
 
 .menufooter {
@@ -210,75 +213,75 @@ footer .logodireitosreservados img{
 }
 
 .logodireitosreservados {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .direitosreservadosfooter {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 h1 {
-font-size: 80px;
-color: aquamarine;
-text-shadow: #ffffff;
-text-shadow: 55px;
+  font-size: 80px;
+  color: aquamarine;
+  text-shadow: #ffffff;
+  text-shadow: 55px;
 }
 
 .formularios {
-background-color: #112434;
-color: #fff;
-padding: 10px;
-font-size: 1.25rem;
+  background-color: #112434;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.25rem;
 }
 
 .formularios li {
-list-style-type: none;
+  list-style-type: none;
 }
 
-.funcFormularios{
-background-color: #112434;
-color: #fff;
-padding: 1rem;
-font-size: 1.25rem;
-position: relative;
+.funcFormularios {
+  background-color: #112434;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.25rem;
+  position: relative;
 
 }
 
-.funcLista{
-font-size: 1.5rem;
-list-style-type: none;
+.funcLista {
+  font-size: 1.5rem;
+  list-style-type: none;
 }
 
-.funcLista input{
-padding-top: 0.3rem ;
-margin: 10px;
+.funcLista input {
+  padding-top: 0.3rem;
+  margin: 10px;
 }
 
 
 
 .equipesobrenos {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .fundosobrenos {
-font-size: 20px;
-color: aquamarine;
-text-shadow: #ffffff;
-text-shadow: 55px;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #9df5cc 25%;
+  font-size: 20px;
+  color: aquamarine;
+  text-shadow: #ffffff;
+  text-shadow: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9df5cc 25%;
 }
 
 .button {
@@ -286,12 +289,12 @@ background-color: #9df5cc 25%;
   color: black;
   padding: 0.4em;
   border-radius: 50px;
-  cursor:pointer;
+  cursor: pointer;
   overflow: hidden;
-  font-size: 1em;           
+  font-size: 1em;
 }
 
-.button:hover{
+.button:hover {
   background: #112434;
   color: #fff;
   border-radius: 50px;
@@ -299,14 +302,15 @@ background-color: #9df5cc 25%;
 }
 
 .links {
-text-decoration: none;
-color: black;
-padding: 0.4em;
+  text-decoration: none;
+  color: black;
+  padding: 0.4em;
 }
 
 /* Ajustes por Fernando Rodrigues Cervantes. somente inclusão do @media e ajustes em .acomodacoes */
 
 @media (max-width: 1170px) {
+
   .acomodacoes,
   .acomodacoes__card {
     flex-flow: column;
@@ -381,7 +385,7 @@ padding: 0.4em;
   font-size: 20px;
   display: contents;
   // color: #ffffff;
-  color:red;
+  color: red;
   margin-top: 20px;
   margin-bottom: 20px;
   justify-content: left;
@@ -399,8 +403,10 @@ padding: 0.4em;
 }
 
 .acomodacoes img:hover {
-  -ms-transform: scale(2); /* IE 9 */
-  -webkit-transform: scale(2); /* Safari 3-8 */
+  -ms-transform: scale(2);
+  /* IE 9 */
+  -webkit-transform: scale(2);
+  /* Safari 3-8 */
   transform: scale(2);
 }
 
@@ -419,7 +425,7 @@ padding: 0.4em;
 .acomodacoes p1 {
   color: #ffffff;
   // color: red;
-  margin-top:10px;
+  margin-top: 10px;
   margin-bottom: 10px;
   text-justify: left;
   padding: 1px 1px 1px 1px;
@@ -462,8 +468,7 @@ padding: 0.4em;
 
 .bodylogin {
   font-family: Arial, Helvetica, sans-serif;
-  background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center
-    center;
+  background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center center;
   background-size: cover;
   height: 89vh;
 }
@@ -523,19 +528,20 @@ padding: 0.4em;
   padding: 8px 16px;
   text-decoration: none;
 }
+
 .pagination a.active {
   background-color: #4CAF50;
   color: white;
   border-radius: 5px;
 }
-  
+
 .pagination a:hover:not(.active) {
   background-color: #ddd;
   border-radius: 5px;
 }
 
 @media screen and (max-width: 985px) {
-  .box1{
+  .box1 {
     max-width: 10em;
     font-size: 0.8em;
   }
@@ -543,35 +549,37 @@ padding: 0.4em;
   .campologin {
     display: block;
     padding: 1%;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     font-size: 1em;
     max-width: min-content;
   }
 
-  .campologin .button{
+  .campologin .button {
     font-size: 1.2vw;
   }
 
-  .navigation,  
+  .navigation,
   .footer {
     font-size: 1em;
-  }  
+  }
 
   .sec {
     font-size: 1em;
   }
-  
-  html, body{
+
+  html,
+  body {
     overflow-x: hidden;
   }
 }
 
 @media screen and (max-width: 720px) {
-  
+
   .navigation {
     display: block;
   }
-  .box1{
+
+  .box1 {
     max-width: 10em;
     font-size: 0.8em;
   }
@@ -579,26 +587,27 @@ padding: 0.4em;
   .campologin {
     display: block;
     padding: 1%;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     font-size: 1em;
     max-width: min-content;
   }
 
-  .campologin .button{
+  .campologin .button {
     font-size: 1em;
   }
 
-  .navigation,  
+  .navigation,
   .footer {
     font-size: 1em;
-  }  
+  }
 
   .sec {
     font-size: 1em;
   }
 }
 
-@media (max-width: 719px) and (orientation:portrait) {  
+@media (max-width: 719px) and (orientation:portrait) {
+
   .navigation,
   .footer,
   .campologin {
@@ -609,18 +618,19 @@ padding: 0.4em;
     font-size: 1em;
   }
 
-  html, body{
+  html,
+  body {
     overflow-x: hidden;
   }
 
-  .dropbtn{
+  .dropbtn {
     display: none;
-  }    
+  }
 
   .campologindrop {
     display: block;
     padding: 1%;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     font-size: 1em;
     max-width: min-content;
   }
@@ -636,31 +646,31 @@ padding: 0.4em;
     color: black;
     padding: 0.3em;
     border-radius: 50px;
-    cursor:pointer;
-    overflow: hidden;  
+    cursor: pointer;
+    overflow: hidden;
     right: 1vw;
     top: 1vw;
     font-size: 1em;
   }
 
-  .dropbtn:checked ~ .navigation-drop-content{
+  .dropbtn:checked~.navigation-drop-content {
     -webkit-transform: translate(300px);
-      -moz-transform: translate(300px);
-        -ms-transform: translate(300px);
-          -o-transform: translate(300px);
-            transform: translate(300px);
+    -moz-transform: translate(300px);
+    -ms-transform: translate(300px);
+    -o-transform: translate(300px);
+    transform: translate(300px);
   }
 
   .navigation-drop-btn:hover,
   .navigation-drop-btn:active,
-  .navigation-drop-content ul a:hover{
+  .navigation-drop-content ul a:hover {
     background: #112434;
     color: #fff;
     border-radius: 50px;
     padding: 0.4em;
   }
 
-  .navigation-drop-content {    
+  .navigation-drop-content {
     width: 300px;
     position: fixed;
     height: 100%;
@@ -672,16 +682,16 @@ padding: 0.4em;
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgba(45, 55, 68, .3);
     line-height: 1.5;
-    left: -300px;  
+    left: -300px;
     -webkit-transition: all 0.25s linear;
-      -moz-transition: all 0.25s linear;
-        -ms-transition: all 0.25s linear;
-          -o-transition: all 0.25s linear;
-            transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
   }
-  
+
   .navigation-drop-content ul a,
-  .navigation-drop-content ul li{
+  .navigation-drop-content ul li {
     text-decoration: none;
     list-style: none;
     color: black;
@@ -703,9 +713,9 @@ padding: 0.4em;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
   outline: none;
 }
 
@@ -716,6 +726,7 @@ padding: 0.4em;
   background-color: #ffffff;
   font-size: 1rem;
 }
+
 .btn:after {
   position: absolute;
   content: "";
@@ -726,27 +737,29 @@ padding: 0.4em;
   direction: rtl;
   z-index: -1;
   box-shadow:
-   -7px -7px 20px 0px #fff9,
-   -4px -4px 5px 0px #fff9,
-   7px 7px 20px 0px #0002,
-   4px 4px 5px 0px #0001;
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
   transition: all 0.3s ease;
 }
+
 .btn:hover {
   color: rgb(255, 5, 5);
 }
+
 .btn:hover:after {
   left: auto;
   right: 0;
   width: 100%;
 }
+
 .btn:active {
   top: 2px;
 }
 
 
 // ajuste para página de acomodacoes...
-/* */
 /* ----------------------- Fernando R Cervantes -------------------------*/
 /* CSS Acomodacoes */
 
@@ -775,8 +788,10 @@ padding: 0.4em;
 }
 
 .acomodacoes_card:hover {
-  -ms-transform: scale(2); /* IE 9 */
-  -webkit-transform: scale(2); /* Safari 3-8 */
+  -ms-transform: scale(2);
+  /* IE 9 */
+  -webkit-transform: scale(2);
+  /* Safari 3-8 */
   transform: scale(1.5);
 }
 
@@ -792,8 +807,11 @@ $imgs_master: (
 );
 
 $n: 0;
-@each $titulo, $url in $imgs_master {
-  $n: $n + 1;
+
+@each $titulo,
+$url in $imgs_master {
+  $n: $n +1;
+
   #acomodacoes_card_imgMaster#{$n} {
     background-image: url(#{$url});
     background-size: cover;
@@ -820,8 +838,11 @@ $imgs_familia: (
 );
 
 $n: 0;
-@each $titulo, $url in $imgs_familia {
-  $n: $n + 1;
+
+@each $titulo,
+$url in $imgs_familia {
+  $n: $n +1;
+
   #acomodacoes_card_imgFamilia#{$n} {
     background-image: url(#{$url});
     background-size: cover;
@@ -847,8 +868,11 @@ $imgs_single: (
 );
 
 $n: 0;
-@each $titulo, $url in $imgs_single {
-  $n: $n + 1;
+
+@each $titulo,
+$url in $imgs_single {
+  $n: $n +1;
+
   #acomodacoes_card_imgSingle#{$n} {
     background-image: url(#{$url});
     background-size: cover;

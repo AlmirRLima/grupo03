@@ -185,6 +185,7 @@ header {
 footer .redessociaisfooter img {
   width: 3em;
   height: 3em;
+  padding: 3em;
 }
 
 footer .logodireitosreservados img {
@@ -301,7 +302,7 @@ h1 {
 /* Ajustes por Fernando Rodrigues Cervantes. somente inclusão do @media e ajustes em .acomodacoes */
 @media (max-width: 1170px) {
   .acomodacoes,
-.acomodacoes__card {
+  .acomodacoes__card {
     flex-flow: column;
     min-width: 100%;
   }
@@ -451,7 +452,8 @@ h1 {
 
 .bodylogin {
   font-family: Arial, Helvetica, sans-serif;
-  background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center center;
+  background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center
+    center;
   background-size: cover;
   height: 89vh;
 }
@@ -513,7 +515,7 @@ h1 {
 }
 
 .pagination a.active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border-radius: 5px;
 }
@@ -539,13 +541,14 @@ h1 {
     font-size: 1.2vw;
   }
   .navigation,
-.footer {
+  .footer {
     font-size: 1em;
   }
   .sec {
     font-size: 1em;
   }
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
 }
@@ -568,7 +571,7 @@ h1 {
     font-size: 1em;
   }
   .navigation,
-.footer {
+  .footer {
     font-size: 1em;
   }
   .sec {
@@ -577,14 +580,15 @@ h1 {
 }
 @media (max-width: 719px) and (orientation: portrait) {
   .navigation,
-.footer,
-.campologin {
+  .footer,
+  .campologin {
     display: none;
   }
   .sec {
     font-size: 1em;
   }
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
   .dropbtn {
@@ -621,8 +625,8 @@ h1 {
     transform: translate(300px);
   }
   .navigation-drop-btn:hover,
-.navigation-drop-btn:active,
-.navigation-drop-content ul a:hover {
+  .navigation-drop-btn:active,
+  .navigation-drop-content ul a:hover {
     background: #112434;
     color: #fff;
     border-radius: 50px;
@@ -648,7 +652,7 @@ h1 {
     transition: all 0.25s linear;
   }
   .navigation-drop-content ul a,
-.navigation-drop-content ul li {
+  .navigation-drop-content ul li {
     text-decoration: none;
     list-style: none;
     color: black;
@@ -668,7 +672,8 @@ h1 {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
@@ -689,7 +694,10 @@ h1 {
   left: 0;
   direction: rtl;
   z-index: -1;
-  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6), -4px -4px 5px 0px rgba(255, 255, 255, 0.6), 7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
   transition: all 0.3s ease;
 }
 
@@ -962,4 +970,4 @@ h1 {
     color: #fff;
     padding: 1rem 0.5rem;
   } */
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
