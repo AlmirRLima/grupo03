@@ -304,7 +304,7 @@ h1 {
 /* Ajustes por Fernando Rodrigues Cervantes. somente inclusão do @media e ajustes em .acomodacoes */
 @media (max-width: 1170px) {
   .acomodacoes,
-.acomodacoes__card {
+  .acomodacoes__card {
     flex-flow: column;
     min-width: 100%;
   }
@@ -454,7 +454,8 @@ h1 {
 
 .bodylogin {
   font-family: Arial, Helvetica, sans-serif;
-  background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center center;
+  background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center
+    center;
   background-size: cover;
   height: 89vh;
 }
@@ -516,7 +517,7 @@ h1 {
 }
 
 .pagination a.active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border-radius: 5px;
 }
@@ -542,13 +543,14 @@ h1 {
     font-size: 1.2vw;
   }
   .navigation,
-.footer {
+  .footer {
     font-size: 1em;
   }
   .sec {
     font-size: 1em;
   }
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
 }
@@ -571,7 +573,7 @@ h1 {
     font-size: 1em;
   }
   .navigation,
-.footer {
+  .footer {
     font-size: 1em;
   }
   .sec {
@@ -587,7 +589,8 @@ h1 {
   .sec {
     font-size: 1em;
   }
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
   .dropbtn {
@@ -651,7 +654,7 @@ h1 {
     transition: all 0.25s linear;
   }
   .navigation-drop-content ul a,
-.navigation-drop-content ul li {
+  .navigation-drop-content ul li {
     text-decoration: none;
     list-style: none;
     color: black;
@@ -671,7 +674,8 @@ h1 {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
@@ -692,7 +696,10 @@ h1 {
   left: 0;
   direction: rtl;
   z-index: -1;
-  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6), -4px -4px 5px 0px rgba(255, 255, 255, 0.6), 7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
   transition: all 0.3s ease;
 }
 
@@ -965,8 +972,7 @@ h1 {
     color: #fff;
     padding: 1rem 0.5rem;
   } */
-}/*# sourceMappingURL=style.css.map */
-
+} /*# sourceMappingURL=style.css.map */
 
 /*_____________________*/
 
@@ -974,26 +980,26 @@ h1 {
 
 /* CSS HOME */
 
-.serviços {   
-  display:flex;
-  align-items: center;  
+.serviços {
+  display: flex;
+  align-items: center;
 }
 
-.botaoreserva{
-  position:fixed;
+.botaoreserva {
+  position: fixed;
   left: 93%;
   top: 40%;
-  border-color:green; 
-  color:royalblue;
+  border-color: green;
+  color: royalblue;
   border-radius: 10px;
   border-width: 3px;
   border-style: groove;
   padding: 0px 6px 0px 6px;
 }
 
-.mural q { 
-  display:inline-block;
-  width: 300px; 
+.mural q {
+  display: inline-block;
+  width: 300px;
 }
 
 .mural h4 {
@@ -1003,7 +1009,7 @@ h1 {
 .mural img {
   border-radius: 15px;
   width: 300px;
-  border: solid white 3px;  
+  border: solid white 3px;
 }
 
 .mural {
@@ -1028,18 +1034,18 @@ h1 {
 
 .serviços {
   display: inline-block;
-  width: 420px;  
+  width: 420px;
 }
 
-.serviços p { 
+.serviços p {
   display: inline-block;
-  width: 400px; 
+  width: 400px;
   text-align: left;
 }
 
 .serviços img {
   border-radius: 15px;
-  width: 270px; 
+  width: 270px;
   border: solid white 3px;
 }
 
@@ -1052,19 +1058,93 @@ h1 {
 .gastronomia img {
   border: solid white 3px;
   border-radius: 15px;
-  width: 500px; 
- }
+  width: 500px;
+}
 
-.gastronomia p { 
+.gastronomia p {
   padding: 0px 50px 0px 50px;
   text-align: center;
 }
 
-.gastronomia_inc { 
+.gastronomia_inc {
   text-align: center;
   width: 100%;
 }
 
 .efeito {
-  text-shadow: 4px 4px 4px;  
+  text-shadow: 4px 4px 4px;
+}
+
+
+/* MODAL */
+.btnmodal {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border: solid 1px #090b08;
+  transition: all 0.3s ease-in;
+  font-size: small;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.btnmodal:hover,
+.btnmodal:focus {
+  transform: translate(0px, -2px);
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-out;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 600px;
+  position: relative;
+  margin: 10% auto;
+  padding: 15px 20px;
+  background: #ffd580;
+}
+
+.modallink {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border: solid 1px #090b08;
+  transition: all 0.3s ease-in;
+}
+
+.modallink:hover,
+.modallink:focus {
+  transform: translate(0px, -2px);
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-out;
 }

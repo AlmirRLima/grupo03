@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-.navbar__nav, .socialMedia__icones, .footer__socialMedia__icon {
+.navbar__nav,
+.socialMedia__icones,
+.footer__socialMedia__icon {
   list-style: none;
 }
 
@@ -20,7 +22,7 @@ body {
   padding: 1.5rem 0;
   width: 90%;
   position: relative;
-  font-family: 'Nightmare Story', sans-serif;
+  font-family: "Nightmare Story", sans-serif;
 }
 
 .header-heightMiddle {
@@ -73,8 +75,8 @@ body {
 
 @media (max-width: 1170px) {
   .header,
-.servicos,
-.servicos__card {
+  .servicos,
+  .servicos__card {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -98,7 +100,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   flex: 1 1 200px;
-
 }
 
 .servicos__card {
@@ -203,4 +204,4 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   padding: 1rem 0.5rem;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

@@ -10,59 +10,59 @@
 </head>
 
 <body>
-        <nav>
-            <header>
-                <div class="navigation-drop">
-                    <input class="dropbtn" type="checkbox" id="Menu">
-                    <label class="navigation-drop-btn" for="Menu">Menu</label>
-                    <div class="navigation-drop-content">
-                        <ul>
-                            <li><a href="/root/index.html">Home</a></li>
-                            <li><a href="acomodacoes.html">Acomodações</a></li>
-                            <li><a href="formulario.html" class="active">RESERVAS</a></li>
-                            <li><a href="/root/admin/login_admincss.html">Area do Colaborador</a></li>
-                            <div class="campologindrop">
-                                <form action="campologin" method="post">                        
-                                    <label for="login"><strong>USUARIO</strong></label>
-                                    <input class="box1" type="email" name="login" id="login" required="required">
-                                    <label for="password"><strong>SENHA</strong></label>
-                                    <input class="box1" type="password" name="password" id="password" required="required">
-                                    <input class="button" type="submit" value="OK"/>
-                                    <br>
-                                    <a class="links" href="">Cadastre-se</a>
-                                    <a class="links" href="">Esqueceu sua senha?</a>   
-                                </form>                    
-                            </div>
-                        </ul>
-                    </div>
+    <nav>
+        <header>
+            <div class="navigation-drop">
+                <input class="dropbtn" type="checkbox" id="Menu">
+                <label class="navigation-drop-btn" for="Menu">Menu</label>
+                <div class="navigation-drop-content">
+                    <ul>
+                        <li><a href="/root/index.html">Home</a></li>
+                        <li><a href="acomodacoes.html">Acomodações</a></li>
+                        <li><a href="formulario.html" class="active">RESERVAS</a></li>
+                        <li><a href="/root/admin/login_admincss.html">Area do Colaborador</a></li>
+                        <div class="campologindrop">
+                            <form action="campologin" method="post">
+                                <label for="login"><strong>USUARIO</strong></label>
+                                <input class="box1" type="email" name="login" id="login" required="required">
+                                <label for="password"><strong>SENHA</strong></label>
+                                <input class="box1" type="password" name="password" id="password" required="required">
+                                <input class="button" type="submit" value="OK" />
+                                <br>
+                                <a class="links" href="">Cadastre-se</a>
+                                <a class="links" href="">Esqueceu sua senha?</a>
+                            </form>
+                        </div>
+                    </ul>
                 </div>
-                <div  id="inicio" class="navigation">
-                    <div><a href="/root/index.html">Home</a></div>
-                    <div><a href="acomodacoes.html">Acomodações</a></div>
-                    <div><a href="formulario.html" class="active">RESERVAS</a></div>
-                    <div><a href="/root/admin/login_admincss.html">Area do Colaborador</a></div>
-                </div>
-                <div class="campologin">
-                    <form action="campologin" method="post">                        
-                        <label for="login"><strong>USUARIO</strong></label>
-                        <input class="box1" type="email" name="login" id="login" required="required">
-                        <label for="password"><strong>SENHA</strong></label>
-                        <input class="box1" type="password" name="password" id="password" required="required">
-                        <input class="button" type="submit" value="OK"/>
-                        <br>
-                        <a class="links" href="">Cadastre-se</a>
-                        <a class="links" href="">Esqueceu sua senha?</a>   
-                    </form>                    
-                </div>
-            </header>    
-        </nav>
-        <main>
-            <section class="banner">
-                <div style="width: 100%; height: 100%;">
-                    <img src="/root/images/png/BANNER-CASANAPRAIA.png"
-                        style="display: block; object-fit: cover; width: 100%; height: 100%; object-position: center 100%;">
-                </div>
-            </section>
+            </div>
+            <div id="inicio" class="navigation">
+                <div><a href="/root/index.html">Home</a></div>
+                <div><a href="acomodacoes.html">Acomodações</a></div>
+                <div><a href="formulario.html" class="active">RESERVAS</a></div>
+                <div><a href="/root/admin/login_admincss.html">Area do Colaborador</a></div>
+            </div>
+            <div class="campologin">
+                <form action="campologin" method="post">
+                    <label for="login"><strong>USUARIO</strong></label>
+                    <input class="box1" type="email" name="login" id="login" required="required">
+                    <label for="password"><strong>SENHA</strong></label>
+                    <input class="box1" type="password" name="password" id="password" required="required">
+                    <input class="button" type="submit" value="OK" />
+                    <br>
+                    <a class="links" href="">Cadastre-se</a>
+                    <a class="links" href="">Esqueceu sua senha?</a>
+                </form>
+            </div>
+        </header>
+    </nav>
+    <main>
+        <section class="banner">
+            <div style="width: 100%; height: 100%;">
+                <img src="/root/images/png/BANNER-CASANAPRAIA.png"
+                    style="display: block; object-fit: cover; width: 100%; height: 100%; object-position: center 100%;">
+            </div>
+        </section>
 
         <section class="sec">
             <h2>HOTEL CASA NA PRAIA</h2>
@@ -140,19 +140,81 @@
                 <br>
                 <button class="botao" type="submit" onsubmit="">Enviar pedido de reserva!</button>
             </form>
+
+            
+            <!-- MODAL-->
+            <br>
+            <a href="#checkoutreserva"><button class="botao">Detalhes da minha reserva</button></a>
+            <div id="checkoutreserva" class="modal">
+                <div class="modalcontent">
+                    <h2 class="modaltitle">RESUMO DA RESERVA</h2>
+                    <form>
+                        <fieldset class="formularios">
+                            <div class="campo">
+                                <p>
+                                    Nome: Anderson Teste
+                                    <br>
+                                    Sobrenome: Da Silva Cervantes
+                                    <br>
+                                    Email: AndersonCervantes@gmail.com
+                                </p>
+                            </div>
+                            <br>
+                            <div class="campo">
+                                <label><strong>Acomodação escolhida:</strong></label>
+                                <br>
+                                <label>
+                                    <input type="radio" name="devweb" value="frontend" checked> Quarto Escolhido
+                                </label>
+                            </div>
+                            <br>
+                            <div class="campo">
+                                <label for="senioridade"><strong>Método de pagamento escolhido:</strong></label>
+                                <select id="senioridade" required>
+                                    <option>Cartão de Crédito</option>
+                                    <option>Transferência por PIX</option>
+                                    <option>Boleto Bancário</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div id="check">
+                                <label><strong>Checkin | Checkout</strong></label><br>
+                                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                                <label for="tecnologia1"> 20/12/2022</label>
+                                <br>
+                                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="HTML">
+                                <label for="tecnologia2"> 28/12/2022</label>
+                            </div>
+                            <div class="campo">
+                                <br>
+                                <label for="experiencia"><strong>Contratar serviços adicionais: </strong></label><br>
+                                <textarea rows="1" style="width: 32rem" id="experiencia" name="experiencia"></textarea>
+                            </div>
+                        </fieldset>
+                        <br>
+                        <button class="botao" type="submit" onsubmit="">Enviar pedido de reserva!</button>
+                    </form>
+                    <br>
+                    <a href="#"><button class="botao">Voltar a página de reservas</button></a>
+                </div>
+            </div>
     </main>
+    
+    <!--/RodapéFooter-->
     <footer class="footer">
         <div class="redessociaisfooter">
             <a href="https://github.com/AlmirRLima/grupo03" target="_blank">
                 <img src="/root/images/png/github.png" alt="Logo do github">
-                <img src="/root/images/png/whatsapp.png" alt="Logo do whatsapp">
-                <a class="links" href="form_contato.html"><h3>Fale conosco</h3></a>
-            </a>                
+                <a href="https://chat.whatsapp.com/KthRdCQBgphIxusvtrUFs7" target="_blank">
+                    <img src="/root/images/png/whatsapp.png" alt="Logo do whatsapp">
+                    <a class="links" href="form_contato.html">
+                        <h3>Fale conosco</h3>
+                    </a>
         </div>
         <div class="logodireitosreservados">
             <img src="/root/images/png/logo.png" alt="Logo">
             <p>
-                Todos os direitos reservados: HOTEL CASA NA PRAIA &copy                    
+                Todos os direitos reservados: HOTEL CASA NA PRAIA &copy
             </p>
             <a class="links" href="#inicio">Voltar ao topo</a>
         </div>
@@ -163,7 +225,7 @@
             <a href="formulario.html" class="links">RESERVAS</a>
         </div>
         <!--/RodapéFooter-->
-      </footer>
-    </body>
+    </footer>
+</body>
 
 </html>
