@@ -2,17 +2,20 @@
 @use "mixins.scss" as mx;
 @use "extends.scss";
 
-body{
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(224,23,23,1) 100%);
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(224, 23, 23, 1) 100%);
   min-height: 100vh;
 }
+
 .header {
   @include mx.box;
 }
+
 .header-heightMiddle {
   height: 300px;
 }
+
 .logo {
   font-size: 2rem;
   text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
@@ -22,14 +25,14 @@ body{
 
 .navbar {
   display: flex;
-  align-items: center;  
+  align-items: center;
   padding: 20px;
   width: 100%;
   background-color: black;
 }
 
 // &__nav {
-.navbar__nav{
+.navbar__nav {
   @extend %list-none;
 }
 
@@ -53,12 +56,15 @@ body{
 .m-1 {
   margin: v.$m1;
 }
+
 .mx-1 {
   margin: v.$mx1;
 }
+
 .p-1 {
   padding: v.$p1;
 }
+
 .text-white {
   color: v.$linkHover;
 }
@@ -68,6 +74,7 @@ body{
 }
 
 @media (max-width: 1170px) {
+
   .header,
   .servicos,
   .servicos__card {
@@ -76,9 +83,11 @@ body{
     flex-wrap: wrap;
     min-width: 100%;
   }
+
   .socialMedia__icones {
     flex-flow: column;
   }
+
   .socialMedia_item {
     margin: v.$m1;
   }
@@ -95,7 +104,7 @@ body{
 
 .servicos__card {
   width: 20vw;
-  margin: 1%;  
+  margin: 1%;
   height: 25vh;
 }
 
@@ -103,19 +112,23 @@ body{
   @include mx.box;
   @include mx.flex-center;
   color: #ffff;
+
   &__navbar {
     @include mx.flex-center;
+
     &__link {
       text-decoration: none;
       color: #ffff;
       font-size: 1vw;
     }
+
     &__nav {
       //@extend %list-none;
       list-style: none;
       flex-flow: column;
     }
   }
+
   &__socialMedia {
     &__icon {
       flex-flow: row;
@@ -126,37 +139,43 @@ body{
     }
   }
 }
-.footer_form fieldset{
-  font-size: 1.2em;
-border: transparent;}
 
-.logo{
+.footer_form fieldset {
+  font-size: 1.2em;
+  border: transparent;
+}
+
+.logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-size: 1.3em;
 }
-.logo img{
+
+.logo img {
   width: 4vw;
 
 }
 
 $imgs: (
-"Para todas as idades":"hall_beach02.jpg",
-"Djs e shows ao vivo":"hall_beach04.jpg",
-"Fantasia e maquiagens por conta do Hotel":"hall_beach07.jpeg",
-"Venha se divertir!":"hall_beach09.jpeg"
+  "Para todas as idades":"hall_beach02.jpg",
+  "Djs e shows ao vivo":"hall_beach04.jpg",
+  "Fantasia e maquiagens por conta do Hotel":"hall_beach07.jpeg",
+  "Venha se divertir!":"hall_beach09.jpeg"
 );
 
 $n: 0;
 
-@each $titulo, $url in $imgs {
-  $n: $n + 1;
+@each $titulo,
+$url in $imgs {
+  $n: $n +1;
+
   #card#{$n} {
     background-image: url(/root/SinglePage/images/produtos/#{$url});
     background-repeat: no-repeat;
     background-size: cover;
+
     & h2::before {
       content: "#{$titulo}";
       display: block;
@@ -168,18 +187,18 @@ $n: 0;
 }
 
 $imgs_halloween: (
-"Festa do Caqui":"hall_beach01.jpg",
-"Festa do Caqui1":"hall_beach02.jpg",
-"Festa do Caqui2":"hall_beach03.jpeg",
-"Festa do Caqui3":"hall_beach03.jpg",
-"Festa do Caqui4":"hall_beach04.jpeg",
-"Festa do Caqui5":"hall_beach04.jpg",
-"Festa do Caqui6":"hall_beach05.jpeg",
-"Festa do Caqui7":"hall_beach05.jpg",
-"Festa do Caqui8":"hall_beach06.jpeg",
-"Festa do Caqui9":"hall_beach06.jpg",
-"Festa do Caqui10":"hall_beach07.jpeg",
-"Festa do Caqui11":"hall_beach08.jpeg",
-"Festa do Caqui12":"hall_beach09.jpeg",
-"Festa do Caqui13":"hall_beach10.jpeg"
+  "Festa do Caqui":"hall_beach01.jpg",
+  "Festa do Caqui1":"hall_beach02.jpg",
+  "Festa do Caqui2":"hall_beach03.jpeg",
+  "Festa do Caqui3":"hall_beach03.jpg",
+  "Festa do Caqui4":"hall_beach04.jpeg",
+  "Festa do Caqui5":"hall_beach04.jpg",
+  "Festa do Caqui6":"hall_beach05.jpeg",
+  "Festa do Caqui7":"hall_beach05.jpg",
+  "Festa do Caqui8":"hall_beach06.jpeg",
+  "Festa do Caqui9":"hall_beach06.jpg",
+  "Festa do Caqui10":"hall_beach07.jpeg",
+  "Festa do Caqui11":"hall_beach08.jpeg",
+  "Festa do Caqui12":"hall_beach09.jpeg",
+  "Festa do Caqui13":"hall_beach10.jpeg"
 );
