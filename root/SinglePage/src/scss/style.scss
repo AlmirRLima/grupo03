@@ -169,7 +169,7 @@ $n: 0;
 
 @each $titulo,
 $url in $imgs {
-  $n: $n +1;
+  $n: $n + 1;
 
   #card#{$n} {
     background-image: url(/root/SinglePage/images/produtos/#{$url});
