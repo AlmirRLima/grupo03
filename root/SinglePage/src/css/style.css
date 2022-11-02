@@ -1,4 +1,5 @@
 * {
+  /* font-family: $fonte; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,12 +15,17 @@ body {
   min-height: 100vh;
 }
 
+.hide {
+  display: none;
+}
+
 .header {
   min-width: 1170px;
   margin: 0 auto;
   padding: 1.5rem 0;
   width: 90%;
   position: relative;
+  font-family: "Nightmare Story", sans-serif;
 }
 
 .header-heightMiddle {
@@ -100,6 +106,15 @@ body {
   flex: 1 1 200px;
 }
 
+.videoYouTube {
+  display: none;
+  width: 20vw;
+  margin: auto;
+  height: 25vh;
+  padding: 0 0 300px 0;
+  text-align: center;
+}
+
 .servicos__card {
   width: 20vw;
   margin: 1%;
@@ -150,6 +165,17 @@ body {
 
 .logo img {
   width: 4vw;
+}
+
+.logo button {
+  background-color: rgb(223, 17, 17);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0.4rem;
+  display: block;
+  width: 15%;
+  margin: 1rem auto;
+  border-radius: 12px;
 }
 
 #card1 {

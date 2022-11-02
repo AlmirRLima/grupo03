@@ -4,12 +4,21 @@
 
 body {
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(224, 23, 23, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(224, 23, 23, 1) 100%
+  );
   min-height: 100vh;
+}
+
+.hide {
+  display: none;
 }
 
 .header {
   @include mx.box;
+  font-family: v.$fonteHeader;
 }
 
 .header-heightMiddle {
@@ -74,7 +83,6 @@ body {
 }
 
 @media (max-width: 1170px) {
-
   .header,
   .servicos,
   .servicos__card {
@@ -100,6 +108,15 @@ body {
   //justify-content:start;
   justify-content: space-around;
   flex: 1 1 200px;
+}
+
+.videoYouTube {
+  display: none;
+  width: 20vw;
+  margin: auto;
+  height: 25vh;
+  padding: 0 0 300px 0;
+  text-align: center;
 }
 
 .servicos__card {
@@ -135,7 +152,6 @@ body {
       @extend %list-none;
       color: #fff;
       text-decoration: none;
-
     }
   }
 }
@@ -155,20 +171,29 @@ body {
 
 .logo img {
   width: 4vw;
+}
 
+.logo button {
+  background-color: rgb(223, 17, 17);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0.4rem;
+  display: block;
+  width: 15%;
+  margin: 1rem auto;
+  border-radius: 12px;
 }
 
 $imgs: (
-  "Para todas as idades":"hall_beach02.jpg",
-  "Djs e shows ao vivo":"hall_beach04.jpg",
-  "Fantasia e maquiagens por conta do Hotel":"hall_beach07.jpeg",
-  "Venha se divertir!":"hall_beach09.jpeg"
+  "Para todas as idades": "hall_beach02.jpg",
+  "Djs e shows ao vivo": "hall_beach04.jpg",
+  "Fantasia e maquiagens por conta do Hotel": "hall_beach07.jpeg",
+  "Venha se divertir!": "hall_beach09.jpeg",
 );
 
 $n: 0;
 
-@each $titulo,
-$url in $imgs {
+@each $titulo, $url in $imgs {
   $n: $n + 1;
 
   #card#{$n} {
@@ -187,18 +212,18 @@ $url in $imgs {
 }
 
 $imgs_halloween: (
-  "Festa do Caqui":"hall_beach01.jpg",
-  "Festa do Caqui1":"hall_beach02.jpg",
-  "Festa do Caqui2":"hall_beach03.jpeg",
-  "Festa do Caqui3":"hall_beach03.jpg",
-  "Festa do Caqui4":"hall_beach04.jpeg",
-  "Festa do Caqui5":"hall_beach04.jpg",
-  "Festa do Caqui6":"hall_beach05.jpeg",
-  "Festa do Caqui7":"hall_beach05.jpg",
-  "Festa do Caqui8":"hall_beach06.jpeg",
-  "Festa do Caqui9":"hall_beach06.jpg",
-  "Festa do Caqui10":"hall_beach07.jpeg",
-  "Festa do Caqui11":"hall_beach08.jpeg",
-  "Festa do Caqui12":"hall_beach09.jpeg",
-  "Festa do Caqui13":"hall_beach10.jpeg"
+  "Festa do Caqui": "hall_beach01.jpg",
+  "Festa do Caqui1": "hall_beach02.jpg",
+  "Festa do Caqui2": "hall_beach03.jpeg",
+  "Festa do Caqui3": "hall_beach03.jpg",
+  "Festa do Caqui4": "hall_beach04.jpeg",
+  "Festa do Caqui5": "hall_beach04.jpg",
+  "Festa do Caqui6": "hall_beach05.jpeg",
+  "Festa do Caqui7": "hall_beach05.jpg",
+  "Festa do Caqui8": "hall_beach06.jpeg",
+  "Festa do Caqui9": "hall_beach06.jpg",
+  "Festa do Caqui10": "hall_beach07.jpeg",
+  "Festa do Caqui11": "hall_beach08.jpeg",
+  "Festa do Caqui12": "hall_beach09.jpeg",
+  "Festa do Caqui13": "hall_beach10.jpeg",
 );
