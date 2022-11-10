@@ -151,7 +151,8 @@ header {
 }
 
 .campologin,
-.campologindrop {
+.campologindrop,
+.logedin {
   padding: 0.5%;
   display: flex;
   justify-content: space-evenly;
@@ -160,6 +161,10 @@ header {
   transition: all 0.3s ease;
   align-content: center;
   flex-wrap: wrap;
+}
+
+.hide{
+  display: none;
 }
 
 .campologin a {
