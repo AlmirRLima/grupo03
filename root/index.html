@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/root/src/css/style.css">
+    <script src="/root/src/js/script.js" async></script>
     <title>Hotel Casa de Praia</title>
 </head>
 
@@ -24,9 +25,9 @@
                         <div class="campologindrop">
                             <form action="campologin" method="post">
                                 <label for="login"><strong>USUARIO</strong></label>
-                                <input class="box1" type="email" name="login" id="login" required="required">
+                                <input class="box1" type="email" name="login" id="logindrop" required="required">
                                 <label for="password"><strong>SENHA</strong></label>
-                                <input class="box1" type="password" name="password" id="password" required="required">
+                                <input class="box1" type="password" name="password" id="passworddrop" required="required">
                                 <input class="button" type="submit" value="OK" />
                                 <br>
                                 <a class="links" href="">Cadastre-se</a>
@@ -45,14 +46,18 @@
             <div class="campologin">
                 <form action="campologin" method="post">
                     <label for="login"><strong>USUARIO</strong></label>
-                    <input class="box1" type="email" name="login" id="login" required="required">
+                    <input class="box1 login" type="email" name="login" id="login">
                     <label for="password"><strong>SENHA</strong></label>
-                    <input class="box1" type="password" name="password" id="password" required="required">
-                    <input class="button" type="submit" value="OK" />
+                    <input class="box1 pswd" type="password" name="password" id="password">
+                    <input class="button btnLogin" type="button" value="OK" id="btnLogin" />
                     <br>
                     <a class="links" href="">Cadastre-se</a>
                     <a class="links" href="">Esqueceu sua senha?</a>
                 </form>
+            </div>
+            <div class="logedin hide">
+                <p id="user"></p>
+                <input class="button btnExit" type="button" value="Sair">
             </div>
         </header>
     </nav>
