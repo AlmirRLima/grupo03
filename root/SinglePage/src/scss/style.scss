@@ -32,6 +32,15 @@ body {
   align-items: baseline;
 }
 
+.logo__slogan {
+  font-family: v.$fonteHeader;
+}
+
+.logo__button {
+  font-family: v.$fonteHeader;
+  border-radius: 4px;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -128,7 +137,7 @@ body {
 .footer {
   @include mx.box;
   @include mx.flex-center;
-  color: #ffff;
+  color: rgb(255, 255, 255);
 
   &__navbar {
     @include mx.flex-center;
@@ -136,7 +145,7 @@ body {
     &__link {
       text-decoration: none;
       color: #ffff;
-      font-size: 1vw;
+      font-size: 1.5vw;
     }
 
     &__nav {
@@ -156,9 +165,44 @@ body {
   }
 }
 
-.footer_form fieldset {
-  font-size: 1.2em;
-  border: transparent;
+/* .footer_form fieldset {
+  font-size: 1em;
+  padding-top: 5px;
+  /* border: transparent; */
+/* border: 1px solid #fff;
+}*/
+
+.formContato {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+  color: rgb(243, 239, 239);
+}
+
+.formContato input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formContato input[type="submit"] {
+  width: 50%;
+  background-color: #ed0808;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer_contato {
+  font-size: 1.4em;
 }
 
 .logo {

@@ -68,7 +68,7 @@
       </div>
       <div class="logo">
         <h1 class="logo__slogan text-white px-1">Que tal um susto???</h1>
-        <button id="btnSusto">Tricks....or treats!</button>
+        <button class="logo__button text-white" id="btnSusto">Tricks....or treats!</button>
       </div>
       <div id="videoHotel" class="videoYouTube">
         <iframe
@@ -119,8 +119,32 @@
             </li>
           </ul>
         </div>
-        <div>
-          <form class="footer_form" action="" method="post">
+        <div class="formContato">
+          <form action="" method="post">
+            <p>
+              Fale conosco através de nossas redes sociais, telefone, ou
+              preencha o formulário abaixo.
+            </p><br />
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome.." />
+            <label for="email">eMail</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Seu email.."
+            />
+            <label for="telefone">Telefone</label>
+            <input
+              type="text"
+              id="telefone"
+              name="telefone"
+              placeholder="Seu telefone.."
+            />
+            <input type="submit" value="Reserve Já!" />
+          </form>
+
+          <!-- <form class="footer_form" action="" method="post">
             <fieldset class="">
               <p>
                 Fale conosco através de nossas redes sociais, telefone, ou
@@ -129,7 +153,7 @@
               <br />
               <label for="nome_mensagem">Nome:</label>
               <input
-                type="name"
+                type="text"
                 id="nome_mensagem"
                 placeholder="JOSE DA SILVA - MATRICULA 999.9999"
               />
@@ -153,7 +177,7 @@
               <br />
             </fieldset>
             <br />
-          </form>
+          </form> -->
         </div>
         <div class="footer_contato">
           <nav class="footer__navbar">
