@@ -1,5 +1,6 @@
 // varaiveis SASS
 // $bgHome:'/projetoSass/images/backgrounds/background_home_2.jpg';
+
 $bgHome: '/root/SinglePage/images/backgrounds/BANNER-CASANAPRAIA.png';
 $bgColorNav: rgba(0, 0, 0, 0.4);
 $link: #f1f806;
@@ -8,11 +9,11 @@ $m1: 1rem;
 $mx1: 0 1.5rem;
 $p1: 1rem;
 $px1: 0 1.5rem;
+$fonteHeader: "Nightmare Story", sans-serif;
 
 * {
-  font-family: $fonte;
+  /* font-family: $fonte; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
