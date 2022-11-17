@@ -25,14 +25,12 @@ window.onload = loginCheck()
 
 console.log(logedin)
 
-btnLoginAdm.onclick = function Validate() {
+/*btnLoginAdm.onclick = function ValidateAdm() {
     let loginAdm = document.getElementById('loginAdm').value
     let pswdAdm = document.getElementById('passwordAdm').value
     
     if (loginAdm != "" && pswdAdm != ""){
         if (loginAdm.match(regexLogin) && pswdAdm.match(regexPswd)) {
-            localStorage.setItem('logedAdm', login)
-            logedin = localStorage.getItem('logedin') 
             alert('Logado com sucesso!')
             window.location.replace('/root/admin/home_admincss.html')
         } else {
@@ -41,7 +39,7 @@ btnLoginAdm.onclick = function Validate() {
     }else{
         alert('È preciso preencher a campo de login e senha')
     }
-}
+}*/
 
 btnLogin.onclick = function Validate() {
     let login = document.getElementById('login').value
@@ -60,14 +58,13 @@ btnLogin.onclick = function Validate() {
         } else {
             alert('Usuario ou senha incorretos')
         }
-    }
-    else{
-        alert('È preciso preencher a campo de login e senha')
+    }else{
+        alert('È preciso preencher os campos de login e senha')
     }
     console.log(logedin)
 }
 
-btnExit.onclick = function () {
+btnExit.onclick = function() {
     let logedOut = 0
     showHide('.campologin', 'remove')
     showHide('.logedin', 'add')
