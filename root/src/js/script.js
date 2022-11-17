@@ -1,33 +1,81 @@
 /* ------- Validação ------- */
 
 const btnLogin = document.getElementById('btnLogin')
+const btnLoginAdm = document.getElementById('btnLoginAdm')
 const btnExit = document.querySelector('.btnExit')
 var regexLogin = /[A-Z.A-Z]@[A-Z.A-Z]/gi
 var regexPswd = /[A-Za-z0-9]{8,14}/g
+var loged = localStorage.getItem('loged')
+var logedin = localStorage.getItem('loginStatus')
 
 function showHide(obj, action) {
     document.querySelector(obj).classList[action]('hide')
 }
 
+function loginCheck(){
+    if(logedin == 1){
+        showHide('.campologin', 'add')
+        showHide('.logedin', 'remove')
+        console.log('ok')
+        document.getElementById('user').innerText = `Olá (${loged})`
+    }
+}
+
+window.onload = loginCheck()
+
+console.log(logedin)
+
+btnLoginAdm.onclick = function Validate() {
+    let loginAdm = document.getElementById('loginAdm').value
+    let pswdAdm = document.getElementById('passwordAdm').value
+    
+    if (loginAdm != "" && pswdAdm != ""){
+        if (loginAdm.match(regexLogin) && pswdAdm.match(regexPswd)) {
+            localStorage.setItem('logedAdm', login)
+            logedin = localStorage.getItem('logedin') 
+            alert('Logado com sucesso!')
+            window.location.replace('/root/admin/home_admincss.html')
+        } else {
+            alert('Usuario ou senha incorretos')
+        }
+    }else{
+        alert('È preciso preencher a campo de login e senha')
+    }
+}
+
 btnLogin.onclick = function Validate() {
     let login = document.getElementById('login').value
     let pswd = document.getElementById('password').value
-    if (login.match(regexLogin) && pswd.match(regexPswd)) {
-        if (login != "") { localStorage.setItem('loged', login) }
-        let loged = localStorage.getItem('loged')
-        console.log(login)
-        console.log(loged)
-        alert('Logado com sucesso!')
-        showHide('.logedin', 'remove')
-        showHide('.campologin', 'add')
-        document.getElementById('user').innerText = `Olá (${loged})`
-    } else {
-        alert('Usuario ou senha incorretos')
+    
+    if (login != "" && pswd != ""){
+        if (login.match(regexLogin) && pswd.match(regexPswd)) {
+            let logedOn = 1
+            localStorage.setItem('loged', login)
+            localStorage.setItem('loginStatus', logedOn)
+            logedin = localStorage.getItem('logedin') 
+            alert('Logado com sucesso!')
+            showHide('.logedin', 'remove')
+            showHide('.campologin', 'add')
+            document.getElementById('user').innerText = `Olá (${loged})`
+        } else {
+            alert('Usuario ou senha incorretos')
+        }
     }
+    else{
+        alert('È preciso preencher a campo de login e senha')
+    }
+    console.log(logedin)
 }
+
 btnExit.onclick = function () {
+    let logedOut = 0
     showHide('.campologin', 'remove')
     showHide('.logedin', 'add')
+    localStorage.setItem('loginStatus', logedOut)
+    logedin = localStorage.getItem('logedOut')
+    if(logedin != 1){
+        console.log(logedin)
+    } 
 }
 
 /* ------- PreLoader ------- */
