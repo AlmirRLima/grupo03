@@ -458,46 +458,54 @@ h1 {
 }
 
 .bodylogin {
-  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  margin: 1%;
+  flex-direction: block;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
   background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center
     center;
   background-size: cover;
-  height: 89vh;
+  height: 50vh;
+  font-size: 1.25rem;
 }
 
 .bodylogin div {
-  background-color: rgba(0, 0, 0, 0.9);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 80px;
-  border-radius: 15px;
-  color: #fff;
+  background-color: transparent;
+  padding: 1%;
+  margin: 1%;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .bodylogin h1 {
-  position: center;
-  top: 30%;
-  left: 30%;
+  justify-content: center;
+  justify-self: center;
+  font-size: 5.00rem;
 }
 
-.bodylogin input {
-  padding: 15px;
-  border: none;
-  outline: none;
-  font-size: 15px;
+.textbox {
+  display: block;
+  padding: 1%;
+  margin-top:5%;
+  font-size: 1.25rem;
 }
 
-.bodylogin a {
+.btnLoginAdm {
+  margin-top: 5%;
   background-color: dodgerblue;
   border: none;
   padding: 5% 40%;
-  width: 140%;
-  height: 140%;
   border-radius: 15px;
   color: white;
-  font-size: 100%;
+  font-size: 1.25rem;
   cursor: pointer;
 }
 
