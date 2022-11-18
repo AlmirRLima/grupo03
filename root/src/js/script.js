@@ -1,8 +1,8 @@
 /* ------- Validação ------- */
 
-const btnLogin = document.getElementById('btnLogin')
-const btnLoginAdm = document.getElementById('btnLoginAdm')
-const btnExit = document.querySelector('.btnExit')
+var btnLogin = document.getElementById('btnLogin')
+var btnLoginAdm = document.getElementById('btnLoginAdm')
+var btnExit = document.querySelector('.btnExit')
 var regexLogin = /[A-Z.A-Z]@[A-Z.A-Z]/gi
 var regexPswd = /[A-Za-z0-9]{8,14}/g
 var loged = localStorage.getItem('loged')
@@ -25,7 +25,7 @@ window.onload = loginCheck()
 
 console.log(logedin)
 
-/*btnLoginAdm.onclick = function ValidateAdm() {
+function validateAdm() {
     let loginAdm = document.getElementById('loginAdm').value
     let pswdAdm = document.getElementById('passwordAdm').value
     
@@ -39,9 +39,9 @@ console.log(logedin)
     }else{
         alert('È preciso preencher a campo de login e senha')
     }
-}*/
+}
 
-btnLogin.onclick = function Validate() {
+btnLogin.onclick = function validate() {
     let login = document.getElementById('login').value
     let pswd = document.getElementById('password').value
     
