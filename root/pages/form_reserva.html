@@ -24,55 +24,61 @@
   <body>
     <nav>
       <header>
-        <div id="inicio" class="navigation">
-          <div><a href="/root/index.html">Home</a></div>
-          <div><a href="acomodacoes.html">Acomodações</a></div>
-          <div><a href="form_reserva.html" class="active">RESERVAS</a></div>
-          <div><a href="admin/login_admincss.html">Area do Colaborador</a></div>
-        </div>
-        <div class="campologin">
-          <form action="campologin" method="post">
-            <label for="login"><strong>USUARIO</strong></label>
-            <input
-              class="box1"
-              type="email"
-              name="login"
-              id="login"
-              required="required"
-            />
-            <label for="password"><strong>SENHA</strong></label>
-            <input
-              class="box1"
-              type="password"
-              name="password"
-              id="password"
-              required="required"
-            />
-            <input class="button" type="submit" value="OK" />
-            <br />
-            <a class="links" href="">Cadastre-se</a>
-            <a class="links" href="">Esqueceu sua senha?</a>
-          </form>
-        </div>
+          <div class="navigation-drop">
+              <input class="dropbtn" type="checkbox" id="Menu">
+              <label class="navigation-drop-btn" for="Menu">Menu</label>
+              <div class="navigation-drop-content">
+                  <ul>
+                      <li><a href="/root/index.html">Home</a></li>
+                      <li><a href="acomodacoes.html">Acomodações</a></li>
+                      <li><a href="form_reserva.html" class="active">RESERVAS</a></li>
+                      <li><a href="/root/admin/login_admincss.html">Area do Colaborador</a></li>
+                      <div class="campologindrop">
+                          <form action="campologin" method="post">
+                              <label for="login"><strong>USUARIO</strong></label>
+                              <input class="box1" type="email" name="login" id="logindrop" required="required">
+                              <label for="password"><strong>SENHA</strong></label>
+                              <input class="box1" type="password" name="password" id="passworddrop" required="required">
+                              <input class="button" type="submit" value="OK" />
+                              <br>
+                              <a class="links" href="">Cadastre-se</a>
+                              <a class="links" href="">Esqueceu sua senha?</a>
+                          </form>
+                      </div>
+                  </ul>
+              </div>
+          </div>
+          <div id="inicio" class="navigation">
+              <div><a href="/root/index.html">Home</a></div>
+              <div><a href="acomodacoes.html">Acomodações</a></div>
+              <div><a href="form_reserva.html" class="active">RESERVAS</a></div>
+              <div><a href="/root/admin/login_admincss.html">Area do Colaborador</a></div>
+          </div>
+          <div class="campologin">
+              <form action="campologin" method="post">
+                  <label for="login"><strong>USUARIO</strong></label>
+                  <input class="box1 login" type="email" name="login" id="login">
+                  <label for="password"><strong>SENHA</strong></label>
+                  <input class="box1 pswd" type="password" name="password" id="password">
+                  <input class="button btnLogin" type="button" value="OK" id="btnLogin" />
+                  <br>
+                  <a class="links" href="cadastro.html">Cadastre-se!</a>
+                  <a class="links" href="">Esqueceu sua senha?</a>
+              </form>
+          </div>
+          <div class="logedin hide">
+              <p id="user"></p>
+              <input class="button btnExit" type="button" value="Sair">
+          </div>
       </header>
-    </nav>
-    <!--/Cabeçalho/MenuNavegação-->
-    <main>
-      <section class="parallax">
-        <div style="width: 100%; height: 100%">
-          <img
-            src="/root/images/png/BANNER-CASANAPRAIA.png"
-            style="
-              display: block;
-              object-fit: cover;
-              width: 100%;
-              height: 100%;
-              object-position: center 100%;
-            "
-          />
-        </div>
+  </nav>
+  <main>
+      <section class="banner">
+          <div style="width: 100%; height: 100%;">
+              <img src="/root/images/png/BANNER-CASANAPRAIA.png"
+                  style="display: block; object-fit: cover; width: 100%; height: 100%; object-position: center 100%;">
+          </div>
       </section>
-
       <!-- Inicio Modal Resummo -->
       <div
         class="modal fade"
