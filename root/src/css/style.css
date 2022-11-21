@@ -51,8 +51,7 @@ header {
 .navigation {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   padding: 1%;
   gap: 1.5%;
@@ -115,33 +114,6 @@ header {
   transition: all 0.3s ease;
 }
 
-.cadinput,
-.cadselect{
-  display: inline-block;
-  width: 8.1vw;
-  margin: 2px;
-}
-
-.cadlabel{
-  display: inline-block;
-  width: 9vw;
-  margin: 2px;
-}
-
-.cadtextarea{
-  width: 17.3vw;
-}
-
-.cadcheck{
-  display: flex;
-  flex-direction: row;
-}
-
-.checkbox{
-  width: 1vw;
-  height: 2vh;
-}
-
 .sec h2 {
   font-size: 3em;
   color: #fff;
@@ -170,7 +142,7 @@ header {
 
 .sec img,
 .sec iframe {
-  width: 20vw;
+  width: 35vw;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -327,25 +299,6 @@ h1 {
   padding: 0.4em;
 }
 
-.button1 {
-  background: white;
-  color: #112434;
-  padding: 0.4em;
-  border-color: #fff;
-  border-radius: 50px;
-  cursor: pointer;
-  overflow: hidden;
-  font-size: 1.5em;
-}
-
-.button1:hover {
-  background: aquamarine;
-  color: #112434;
-  border-radius: 50px;
-  padding: 0.4em;
-  transform: translate(0px, -2px);
-}
-
 .links {
   text-decoration: none;
   color: black;
@@ -355,7 +308,7 @@ h1 {
 /* Ajustes por Fernando Rodrigues Cervantes. somente inclusão do @media e ajustes em .acomodacoes */
 @media (max-width: 1170px) {
   .acomodacoes,
-  .acomodacoes__card {
+.acomodacoes__card {
     flex-flow: column;
     min-width: 100%;
   }
@@ -447,8 +400,10 @@ h1 {
 }
 
 .acomodacoes img:hover {
-  -ms-transform: scale(2); /* IE 9 */
-  -webkit-transform: scale(2); /* Safari 3-8 */
+  -ms-transform: scale(2);
+  /* IE 9 */
+  -webkit-transform: scale(2);
+  /* Safari 3-8 */
   transform: scale(2);
 }
 
@@ -514,8 +469,7 @@ h1 {
   padding: 1%;
   box-sizing: border-box;
   transition: all 0.3s ease;
-  background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center
-    center;
+  background: url("../images/png/BANNER-CASANAPRAIA.png") no-repeat center center;
   background-size: cover;
   height: 50vh;
   font-size: 1.25rem;
@@ -534,13 +488,13 @@ h1 {
 .bodylogin h1 {
   justify-content: center;
   justify-self: center;
-  font-size: 5.00rem;
+  font-size: 5rem;
 }
 
 .textbox {
   display: block;
   padding: 1%;
-  margin-top:5%;
+  margin-top: 5%;
   font-size: 1.25rem;
 }
 
@@ -576,7 +530,7 @@ h1 {
 }
 
 .pagination a.active {
-  background-color: #4caf50;
+  background-color: #4CAF50;
   color: white;
   border-radius: 5px;
 }
@@ -602,14 +556,14 @@ h1 {
     font-size: 1.2vw;
   }
   .navigation,
-  .footer {
+.footer {
     font-size: 1em;
   }
   .sec {
     font-size: 1em;
   }
   html,
-  body {
+body {
     overflow-x: hidden;
   }
 }
@@ -632,7 +586,7 @@ h1 {
     font-size: 1em;
   }
   .navigation,
-  .footer {
+.footer {
     font-size: 1em;
   }
   .sec {
@@ -641,15 +595,15 @@ h1 {
 }
 @media (max-width: 719px) and (orientation: portrait) {
   .navigation,
-  .footer,
-  .campologin {
+.footer,
+.campologin {
     display: none;
   }
   .sec {
     font-size: 1em;
   }
   html,
-  body {
+body {
     overflow-x: hidden;
   }
   .dropbtn {
@@ -686,8 +640,8 @@ h1 {
     transform: translate(300px);
   }
   .navigation-drop-btn:hover,
-  .navigation-drop-btn:active,
-  .navigation-drop-content ul a:hover {
+.navigation-drop-btn:active,
+.navigation-drop-content ul a:hover {
     background: #112434;
     color: #fff;
     border-radius: 50px;
@@ -713,7 +667,7 @@ h1 {
     transition: all 0.25s linear;
   }
   .navigation-drop-content ul a,
-  .navigation-drop-content ul li {
+.navigation-drop-content ul li {
     text-decoration: none;
     list-style: none;
     color: black;
@@ -733,8 +687,7 @@ h1 {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
@@ -755,10 +708,7 @@ h1 {
   left: 0;
   direction: rtl;
   z-index: -1;
-  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6),
-    -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333),
-    4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6), -4px -4px 5px 0px rgba(255, 255, 255, 0.6), 7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
   transition: all 0.3s ease;
 }
 
@@ -802,8 +752,10 @@ h1 {
 }
 
 .acomodacoes_card:hover {
-  -ms-transform: scale(2); /* IE 9 */
-  -webkit-transform: scale(2); /* Safari 3-8 */
+  -ms-transform: scale(2);
+  /* IE 9 */
+  -webkit-transform: scale(2);
+  /* Safari 3-8 */
   transform: scale(1.5);
 }
 
@@ -1031,13 +983,112 @@ h1 {
     color: #fff;
     padding: 1rem 0.5rem;
   } */
-} /*# sourceMappingURL=style.css.map */
+}
 
-/*_____________________*/
+/* FRC - inclusão CSS para form_reserva */
+/* CSS para modal */
+.modal {
+  font-size: 1.5em;
+  color: #020202;
+}
 
-/*  Luiz Fernando  */
+.modal h3 {
+  font-size: 2em;
+  color: #e90c0c;
+}
 
-/* CSS HOME */
+/* usando grid */
+.minhaReserva label {
+  color: #fff;
+}
+
+.gridReserva {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  max-width: auto;
+  padding: 0px;
+  margin-top: 20px;
+  grid-gap: 20px;
+}
+
+.gridReserva p {
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.gridReserva > div:nth-child(n+4) {
+  display: grid;
+  background: rgb(245, 245, 246);
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.gridReserva > img {
+  height: 100%;
+  width: 100%;
+  /*max-width: auto; */
+  display: block;
+  padding-top: 50px;
+}
+
+.gridReserva > div.resumo {
+  grid-column: 2;
+  border: 10px solid rgb(221, 97, 97);
+  border-radius: 15px;
+  grid-row: 1/3;
+  border-top: 10px solid tomato;
+  display: block;
+}
+
+.gridReserva > div.resumo form {
+  border: 2px solid rgb(221, 97, 97);
+  border-radius: 5px;
+  display: block;
+}
+
+.gridReserva > div.resumo h1 {
+  font-size: 2em;
+  color: rgb(225, 11, 11);
+  font-weight: 300;
+}
+
+.gridReserva > div.resumo h3 {
+  font-size: 2em;
+  color: rgb(18, 17, 17);
+  font-weight: 300;
+}
+
+.gridReserva > div.resumo p {
+  font-size: 2em;
+  color: rgb(18, 17, 17);
+  font-weight: 300;
+}
+
+.gridReserva label {
+  color: #fff;
+}
+
+.gridReserva button {
+  background: #07033f;
+  color: rgb(67, 4, 224);
+  padding: 0.4em;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 2em;
+}
+
+.gridReserva #btnServicos {
+  font-size: 1.5em;
+  padding: 5px;
+  color: rgb(225, 11, 11);
+  cursor: pointer;
+}
 
 .serviços {
   display: flex;
@@ -1058,7 +1109,7 @@ h1 {
   cursor: pointer;
 }
 
-.botaoreserva:hover{
+.botaoreserva:hover {
   transform: translate(0px, -2px);
   -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
@@ -1159,10 +1210,10 @@ h1 {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
+
 .btnmodal:hover,
 .btnmodal:focus {
   transform: translate(0px, -2px);
@@ -1235,8 +1286,8 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* end: Preloader */
 
+/* end: Preloader */
 .popup {
   position: fixed;
   top: 50%;
@@ -1245,6 +1296,7 @@ h1 {
   display: none;
   z-index: 9999;
 }
+
 .contentBox {
   position: relative;
   width: 1450px;
@@ -1287,7 +1339,6 @@ h1 {
     height: auto;
     flex-direction: column;
   }
-
   .close {
     top: -50px;
     right: -10px;
@@ -1296,4 +1347,4 @@ h1 {
     background-position: center;
     background-size: 10px;
   }
-}
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/root/src/css/style.css" />
+    <title>Hotel Casa de Praia</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- chamada JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="/root/src/js/form_reserva.js" async></script>
+  </head>
+
+  <body>
+    <nav>
+      <header>
+        <div id="inicio" class="navigation">
+          <div><a href="/root/index.html">Home</a></div>
+          <div><a href="acomodacoes.html">Acomodações</a></div>
+          <div><a href="form_reserva.html" class="active">RESERVAS</a></div>
+          <div><a href="admin/login_admincss.html">Area do Colaborador</a></div>
+        </div>
+        <div class="campologin">
+          <form action="campologin" method="post">
+            <label for="login"><strong>USUARIO</strong></label>
+            <input
+              class="box1"
+              type="email"
+              name="login"
+              id="login"
+              required="required"
+            />
+            <label for="password"><strong>SENHA</strong></label>
+            <input
+              class="box1"
+              type="password"
+              name="password"
+              id="password"
+              required="required"
+            />
+            <input class="button" type="submit" value="OK" />
+            <br />
+            <a class="links" href="">Cadastre-se</a>
+            <a class="links" href="">Esqueceu sua senha?</a>
+          </form>
+        </div>
+      </header>
+    </nav>
+    <!--/Cabeçalho/MenuNavegação-->
+    <main>
+      <section class="parallax">
+        <div style="width: 100%; height: 100%">
+          <img
+            src="/root/images/png/BANNER-CASANAPRAIA.png"
+            style="
+              display: block;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              object-position: center 100%;
+            "
+          />
+        </div>
+      </section>
+
+      <!-- Inicio Modal Resummo -->
+      <div
+        class="modal fade"
+        id="modalResumo"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title"></h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- INÍCIO DO CONTEÚDO -->
+              <h3>Veja o resumo de sua solicitação!</h3>
+              <hr />
+              <h2>Diárias</h2>
+              <br />
+              <div id="diarias">
+                <p>...</p>
+                <p></p>
+              </div>
+              <hr />
+              <h2>Servicos Adicionais</h2>
+              <br />
+              <p></p>
+              <div id="servicos">
+                <p>...</p>
+                <p></p>
+              </div>
+              <hr />
+              <p>Total</p>
+              <div id="total">
+                <p>...</p>
+                <p></p>
+              </div>
+              <hr />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim Modal Resumo-->
+
+      <!-- Modal Servicos -->
+      <div class="modal" tabindex="-1" id="modalServicos">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title"></h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- INÍCIO DO CONTEÚDO -->
+              <h3>Selecione mais serviços!</h3>
+              <div>
+                <hr />
+                <input
+                  type="checkbox"
+                  id="servico1"
+                  name="servico1"
+                  value="cafeQuarto"
+                />
+                <label for="servico1">
+                  Cafe da Manhã no Quarto - R$ 100,00</label
+                ><br />
+                <input
+                  type="checkbox"
+                  id="servico2"
+                  name="servico2"
+                  value="5g"
+                />
+                <label for="servico2"> Internet 5G - R$ 50,00 </label><br />
+                <input
+                  type="checkbox"
+                  id="servico3"
+                  name="servico3"
+                  value="massagem"
+                />
+                <label for="servico3"> Massagem Terapéutica - R$ 150,00 </label
+                ><br />
+                <input
+                  type="checkbox"
+                  id="servico4"
+                  name="servico4"
+                  value="children"
+                />
+                <label for="servico4"> Serviços ChildrenCare - R$ 200,00</label
+                ><br />
+                <input
+                  type="checkbox"
+                  id="servico5"
+                  name="servico5"
+                  value="pet"
+                />
+                <label for="servico5"> Serviços PetCare - R$ 100,00 </label
+                ><br />
+                <p></p>
+                <p></p>
+                <p></p>
+                <hr />
+                <p>
+                  Valores cobrados por diária - consulte nosso site para mais
+                  informações
+                </p>
+              </div>
+              <!-- FINAL DO CONTEÚDO -->
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim Modal Servicos -->
+
+      <section class="sec">
+        <!--Corpo da pagina-->
+
+        <div class="minhaReserva">
+          <h1>Minha Reserva</h1>
+          <br />
+          <h3>Forneça a data de entrada, saída e quantidade de pessoas.</h3>
+          <br />
+          <p id="msgAlerta">msgAlerta</p>
+          <div class="minhaReserva form">
+            <label for="dtEntrada">Entrada</label>
+            <input
+              type="date"
+              id="dtEntrada"
+              name="dtEntrada"
+              value="2022-11-16"
+            />
+            <label for="dtSaida">Saida</label>
+            <input type="date" id="dtSaida" name="dtSaida" value="2022-11-30" />
+            <label for="qtPessoas">Quantidade Pessoas</label>
+            <input type="number" id="qtPessoas" name="qtPessoas" value="1" />
+          </div>
+          <br />
+          <h4>Escolha o quarto e demais opções.</h4>
+        </div>
+        <hr />
+        <section class="gridReserva">
+          <div>
+            <img src="/root/images/png/room01_master.jpg" alt="Master" />
+
+            <h2>Suite Master</h2>
+            <p>
+              Cama estilo "queen-size" com 05 funções de massagem, uma TV 4K de
+              50" com programação livre (NetFlix, Prime e canais abertos). Sala
+              com sofá grande e uma poltrona de leitura, e uma TV de 45",
+              dispositivo Alexa, video-game (PS4 ou XBox) com jogos instalados.
+              Mesa para notebook e cozinha funcional (mini-fogão elétrico,
+              micro-ondas, cafeteira e utensílios básicos).
+            </p>
+            <h3>R$ 600,00</h3>
+            <input
+              type="radio"
+              id="tipoApto"
+              name="tipoApto"
+              value="Master"
+              checked
+            />
+            <label for="suiteMaster">Selecionar a Suite Master</label><br />
+            <hr />
+          </div>
+          <div>
+            <img src="/root/images/png/room02_family.jpg" alt="Family" />
+            <h2>Suite Family</h2>
+            <p>
+              Quarto amplo com duas camas tamanho "king-size", para até 4
+              pessoas. Sala conjugada com TV de 50" e programação livre
+              (NetFlix, Prime e canais abertos). Sofá cama , frigobar, pia e
+              cafeteira.
+            </p>
+            <h3>R$ 400,00</h3>
+            <input type="radio" id="tipoApto" name="tipoApto" value="Family" />
+            <label for="suiteFamily">Selecionar a Suite Family</label><br />
+            <hr />
+          </div>
+          <div>
+            <img src="/root/images/png/room4_basic.jpg" alt="Single" />
+            <h2>Suite Comfort</h2>
+            <p>
+              Cama confortável, TV a cabo e frigobar. Mesa de trabalho, internet
+              e serviços adicionais sob consulta.
+            </p>
+            <h3>R$ 200,00</h3>
+            <input type="radio" id="tipoApto" name="tipoApto" value="Comfort" />
+            <label for="suiteComfort">Selecionar a Suite Comfort</label><br />
+          </div>
+
+          <div class="resumo">
+            <h1>Resumo da reserva</h1>
+
+            <div class="gridReserva resumo form">
+              <form action="">
+                <h3>Apartamento:</h3>
+                <span id="tipoAcomodacao">tipoApto</span>
+                <br />
+                <h3>Checkin:</h3>
+                <p id="dtCheckin">dtCheckin</p>
+                <br />
+                <h3>Checkout:</h3>
+                <p id="dtCheckout">dtCheckout</p>
+                <br />
+                <h3>Pessoas</h3>
+                <p id="qtHospedes">qtHospedes</p>
+                <br />
+                <br />
+                <span id="btnServicos">Adicionar mais serviços</span>
+                <br />
+                <br />
+                <button type="button" class="btn btnPadrao" id="btnResumo">
+                  Confirmar
+                </button>
+                <!-- <button type="button" class="btn btnPadrao" id="btnConfirma">
+                  Confirmar
+                </button> -->
+              </form>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <!--Corpo da pagina-->
+      </section>
+    </main>
+    <!--/RodapéFooter-->
+    <footer class="footer">
+      <hr />
+      <div class="redessociaisfooter">
+        <a href="https://github.com/AlmirRLima/grupo03" target="_blank">
+          <img
+            width="50"
+            height="50"
+            src="/root/images/png/github.png"
+            alt="Logo do github"
+          />
+          <img
+            width="50"
+            height="50"
+            src="/root/images/png/whatsapp.png"
+            alt="Logo do whatsapp"
+          />
+          <a class="links" href="pages/form_contato.html">
+            <h3>Fale conosco</h3>
+          </a>
+        </a>
+      </div>
+      <div class="logodireitosreservados">
+        <img
+          width="75"
+          height="75"
+          src="/root/images/png/logo.png"
+          alt="Logo"
+        />
+        <p>Todos os direitos reservados: HOTEL CASA NA PRAIA &copy</p>
+      </div>
+      <div class="menufooter">
+        <h3>LINKS ÚTEIS</h3>
+        <a href="index.html" class="links">Home</a>
+        <a href="pages/acomodacoes.html" class="links">Acomodações</a>
+        <a href="pages/formulario.html" class="links">RESERVAS</a>
+      </div>
+      <hr />
+      <!--/RodapéFooter-->
+    </footer>
+  </body>
+
+  <script>
+    $("#dtEntrada").change(function () {
+      atualizaLocalStorage();
+    });
+
+    $("#dtSaida").change(function () {
+      atualizaLocalStorage();
+    });
+
+    $("#qtPessoas").change(function () {
+      atualizaLocalStorage();
+    });
+
+    // falta checar isso, não está funcionando....
+    $("#tipoApto").on("change", function () {
+      console.log("tipoApto mudou...");
+      if (this.checked) {
+        atualizaLocalStorage();
+      }
+    });
+
+    $().ready(function () {
+      $("#btnServicos").click(function () {
+        $("#modalServicos").modal("show");
+        //$(".modal").modal("show");
+
+        // $(".modal-body h3").html("Selecione mais serviços!");
+        // $(".modal-body p")
+        //   .eq(0)
+        //   .text("Nome: " + $("#nome").val());
+        // $(".modal-body p")
+        //   .eq(1)
+        //   .text("Email: " + $("#email").val());
+        // $(".modal-body p")
+        //   .eq(2)
+        //   .text("Mensagem: " + $("#contato").val());
+      });
+    });
+
+    $().ready(function () {
+      $("#btnResumo").click(function () {
+        // executa function para checar dados da reserva...
+        check = confirmaReserva();
+        console.log("Check ", check);
+
+        if (check) {
+          $("#modalResumo").modal("show");
+          // $(".modal-body h3").html("Veja o resumo de sua solicitação!");
+
+          preencheModalResumo();
+        }
+      });
+    });
+
+    // $("input:checkbox:(:checked)").each(function () {
+    //   // console.log()
+    // });
+    // str = "";
+    // $(":checkbox").each(function () {
+    //   str += this.checked ? "1," : "0,";
+    // });
+    // console.log("servicos : ", str);
+    // localStorage.setItem("servicos", str);
+    // str2 = "";
+    // $("input[type=checkbox]").each(function () {
+    //   if (this.checked) {
+    //     str2 += "1,";
+    //   } else {
+    //     str2 += "0,";
+    //   }
+    // });
+    // // console.log("checkbox", $(this).val());
+    // console.log("str2", str2);
+
+    $("#servico1").click(function () {
+      if ($("#servico1").is(":checked")) {
+        localStorage.setItem("servico1", true);
+      } // checked
+      else {
+        localStorage.setItem("servico1", false);
+      } // unchecked
+    });
+    $("#servico2").click(function () {
+      if ($("#servico2").is(":checked")) {
+        localStorage.setItem("servico2", true);
+      } // checked
+      else {
+        localStorage.setItem("servico2", false);
+      } // unchecked
+    });
+    $("#servico3").click(function () {
+      if ($("#servico3").is(":checked")) {
+        localStorage.setItem("servico3", true);
+      } // checked
+      else {
+        localStorage.setItem("servico3", false);
+      } // unchecked
+    });
+    $("#servico4").click(function () {
+      if ($("#servico4").is(":checked")) {
+        localStorage.setItem("servico4", true);
+      } // checked
+      else {
+        localStorage.setItem("servico4", false);
+      } // unchecked
+    });
+    $("#servico5").click(function () {
+      if ($("#servico5").is(":checked")) {
+        localStorage.setItem("servico5", true);
+      } // checked
+      else {
+        localStorage.setItem("servico5", false);
+      } // unchecked
+    });
+  </script>
+</html>
