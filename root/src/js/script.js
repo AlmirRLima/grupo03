@@ -1,79 +1,22 @@
 /* ------- Validação ------- */
+btnLogin.addEventListener('click',()=>{
+    import('./module/user_module.js').then((user) => {
+        user.validate()        
+    }).catch((err) => {
+    });
+})
 
-var btnLogin = document.getElementById('btnLogin')
-var btnLoginAdm = document.getElementById('btnLoginAdm')
-var btnExit = document.querySelector('.btnExit')
-var regexLogin = /[A-Z.A-Z]@[A-Z.A-Z]/gi
-var regexPswd = /[A-Za-z0-9]{8,14}/g
-var loged = localStorage.getItem('loged')
-var logedin = localStorage.getItem('loginStatus')
+window.onload = import('./module/user_module.js').then((user)=>{
+    user.loginCheck()
+})
 
-function showHide(obj, action) {
-    document.querySelector(obj).classList[action]('hide')
-}
+btnExit.addEventListener('click',()=>{
+    import('./module/user_module.js').then((user) => {
+        user.logOut()
+    }).catch((err) => {        
+    });
+})
 
-function loginCheck(){
-    if(logedin == 1){
-        showHide('.campologin', 'add')
-        showHide('.logedin', 'remove')
-        console.log('ok')
-        document.getElementById('user').innerText = `Olá (${loged})`
-    }
-}
-
-window.onload = loginCheck()
-
-console.log(logedin)
-
-function validateAdm() {
-    let loginAdm = document.getElementById('loginAdm').value
-    let pswdAdm = document.getElementById('passwordAdm').value
-    
-    if (loginAdm != "" && pswdAdm != ""){
-        if (loginAdm.match(regexLogin) && pswdAdm.match(regexPswd)) {
-            alert('Logado com sucesso!')
-            window.location.replace('/root/admin/home_admincss.html')
-        } else {
-            alert('Usuario ou senha incorretos')
-        }
-    }else{
-        alert('È preciso preencher a campo de login e senha')
-    }
-}
-
-btnLogin.onclick = function validate() {
-    let login = document.getElementById('login').value
-    let pswd = document.getElementById('password').value
-    
-    if (login != "" && pswd != ""){
-        if (login.match(regexLogin) && pswd.match(regexPswd)) {
-            let logedOn = 1
-            localStorage.setItem('loged', login)
-            localStorage.setItem('loginStatus', logedOn)
-            logedin = localStorage.getItem('logedin') 
-            alert('Logado com sucesso!')
-            showHide('.logedin', 'remove')
-            showHide('.campologin', 'add')
-            document.getElementById('user').innerText = `Olá (${loged})`
-        } else {
-            alert('Usuario ou senha incorretos')
-        }
-    }else{
-        alert('È preciso preencher os campos de login e senha')
-    }
-    console.log(logedin)
-}
-
-btnExit.onclick = function() {
-    let logedOut = 0
-    showHide('.campologin', 'remove')
-    showHide('.logedin', 'add')
-    localStorage.setItem('loginStatus', logedOut)
-    logedin = localStorage.getItem('logedOut')
-    if(logedin != 1){
-        console.log(logedin)
-    } 
-}
 
 /* ------- PreLoader ------- */
 $(window).on('load', function () {
