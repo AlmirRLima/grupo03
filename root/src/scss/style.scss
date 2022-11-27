@@ -870,7 +870,7 @@ $n: 0;
 
 @each $titulo,
 $url in $imgs_master {
-  $n: $n +1;
+  $n: $n + 1;
 
   #acomodacoes_card_imgMaster#{$n} {
     background-image: url(#{$url});
@@ -901,7 +901,7 @@ $n: 0;
 
 @each $titulo,
 $url in $imgs_familia {
-  $n: $n +1;
+  $n: $n + 1;
 
   #acomodacoes_card_imgFamilia#{$n} {
     background-image: url(#{$url});

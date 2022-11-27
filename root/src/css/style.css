@@ -586,11 +586,6 @@ h1 {
   border-radius: 5px;
 }
 
-.box1 {
-  max-width: 10em;
-  font-size: 0.8em;
-}
-
 @media screen and (max-width: 985px) {
   .box1 {
     max-width: 10em;
@@ -1325,4 +1320,6 @@ body {
     background-position: center;
     background-size: 10px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
