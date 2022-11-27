@@ -18,66 +18,103 @@
     <!-- chamada JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script src="/root/src/js/form_reserva.js" async></script>
+    <!-- <script src="/root/src/js/form_reserva.js" async></script> -->
+    <script src="/root/src/js/script.js" async type="module"></script>
   </head>
 
   <body>
     <nav>
       <header>
-          <div class="navigation-drop">
-              <input class="dropbtn" type="checkbox" id="Menu">
-              <label class="navigation-drop-btn" for="Menu">Menu</label>
-              <div class="navigation-drop-content">
-                  <ul>
-                      <li><a href="/root/index.html">Home</a></li>
-                      <li><a href="acomodacoes.html">Acomodações</a></li>
-                      <li><a href="form_reserva.html" class="active">RESERVAS</a></li>
-                      <li><a href="/root/admin/login_admincss.html">Area do Colaborador</a></li>
-                      <div class="campologindrop">
-                          <form action="campologin" method="post">
-                              <label for="login"><strong>USUARIO</strong></label>
-                              <input class="box1" type="email" name="login" id="logindrop" required="required">
-                              <label for="password"><strong>SENHA</strong></label>
-                              <input class="box1" type="password" name="password" id="passworddrop" required="required">
-                              <input class="button" type="submit" value="OK" />
-                              <br>
-                              <a class="links" href="">Cadastre-se</a>
-                              <a class="links" href="">Esqueceu sua senha?</a>
-                          </form>
-                      </div>
-                  </ul>
-              </div>
-          </div>
-          <div id="inicio" class="navigation">
-              <div><a href="/root/index.html">Home</a></div>
-              <div><a href="acomodacoes.html">Acomodações</a></div>
-              <div><a href="form_reserva.html" class="active">RESERVAS</a></div>
-              <div><a href="/root/admin/login_admincss.html">Area do Colaborador</a></div>
-          </div>
-          <div class="campologin">
-              <form action="campologin" method="post">
+        <div class="navigation-drop">
+          <input class="dropbtn" type="checkbox" id="Menu" />
+          <label class="navigation-drop-btn" for="Menu">Menu</label>
+          <div class="navigation-drop-content">
+            <ul>
+              <li><a href="/root/index.html">Home</a></li>
+              <li><a href="acomodacoes.html">Acomodações</a></li>
+              <li><a href="form_reserva.html" class="active">RESERVAS</a></li>
+              <li>
+                <a href="/root/admin/login_admincss.html"
+                  >Area do Colaborador</a
+                >
+              </li>
+              <div class="campologindrop">
+                <form action="campologin" method="post">
                   <label for="login"><strong>USUARIO</strong></label>
-                  <input class="box1 login" type="email" name="login" id="login">
+                  <input
+                    class="box1"
+                    type="email"
+                    name="login"
+                    id="logindrop"
+                    required="required"
+                  />
                   <label for="password"><strong>SENHA</strong></label>
-                  <input class="box1 pswd" type="password" name="password" id="password">
-                  <input class="button btnLogin" type="button" value="OK" id="btnLogin" />
-                  <br>
-                  <a class="links" href="cadastro.html">Cadastre-se!</a>
+                  <input
+                    class="box1"
+                    type="password"
+                    name="password"
+                    id="passworddrop"
+                    required="required"
+                  />
+                  <input class="button" type="submit" value="OK" />
+                  <br />
+                  <a class="links" href="">Cadastre-se</a>
                   <a class="links" href="">Esqueceu sua senha?</a>
-              </form>
+                </form>
+              </div>
+            </ul>
           </div>
-          <div class="logedin hide">
-              <p id="user"></p>
-              <input class="button btnExit" type="button" value="Sair">
+        </div>
+        <div id="inicio" class="navigation">
+          <div><a href="/root/index.html">Home</a></div>
+          <div><a href="acomodacoes.html">Acomodações</a></div>
+          <div><a href="form_reserva.html" class="active">RESERVAS</a></div>
+          <div>
+            <a href="/root/admin/login_admincss.html">Area do Colaborador</a>
           </div>
+        </div>
+        <div class="campologin">
+          <form action="campologin" method="post">
+            <label for="login"><strong>USUARIO</strong></label>
+            <input class="box1 login" type="email" name="login" id="login" />
+            <label for="password"><strong>SENHA</strong></label>
+            <input
+              class="box1 pswd"
+              type="password"
+              name="password"
+              id="password"
+            />
+            <input
+              class="button btnLogin"
+              type="button"
+              value="OK"
+              id="btnLogin"
+            />
+            <br />
+            <a class="links" href="cadastro.html">Cadastre-se!</a>
+            <a class="links" href="">Esqueceu sua senha?</a>
+          </form>
+        </div>
+        <div class="logedin hide">
+          <p id="user"></p>
+          <input class="button btnExit" type="button" value="Sair" />
+        </div>
       </header>
-  </nav>
-  <main>
+    </nav>
+    <main>
       <section class="banner">
-          <div style="width: 100%; height: 100%;">
-              <img src="/root/images/png/BANNER-CASANAPRAIA.png"
-                  style="display: block; object-fit: cover; width: 100%; height: 100%; object-position: center 100%;">
-          </div>
+        <div style="width: 100%; height: 100%">
+          <img
+            src="/root/images/png/BANNER-CASANAPRAIA.png"
+            style="
+              display: block;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              object-position: center 100%;
+            "
+          />
+        </div>
       </section>
       <!-- Inicio Modal Resummo -->
       <div
@@ -377,24 +414,36 @@
 
   <script>
     $("#dtEntrada").change(function () {
-      atualizaLocalStorage();
+      window._Reserva.atualizaLocalStorage();
     });
 
     $("#dtSaida").change(function () {
-      atualizaLocalStorage();
+      window._Reserva.atualizaLocalStorage();
     });
 
     $("#qtPessoas").change(function () {
-      atualizaLocalStorage();
+      window._Reserva.atualizaLocalStorage();
     });
 
-    // falta checar isso, não está funcionando....
-    $("#tipoApto").on("change", function () {
-      console.log("tipoApto mudou...");
-      if (this.checked) {
-        atualizaLocalStorage();
+    // o change da radio button funcionou com a rotina abaixo, apos muita pesquisa no Google...
+
+    $("input[type=radio][name=tipoApto]").change(function () {
+      if (this.value == "Master") {
+        console.log("Selecionou MASTER");
+      } else if (this.value == "Family") {
+        console.log("Selecionou Family");
+      } else {
+        console.log("Selecionou Comfort");
       }
+      window._Reserva.atualizaLocalStorage();
     });
+
+    // $("#tipoApto").on("change", function () {
+    //   console.log("tipoApto mudou...");
+    //   if (this.checked) {
+    //     modResumo.atualizaLocalStorage();
+    //   }
+    // });
 
     $().ready(function () {
       $("#btnServicos").click(function () {
@@ -416,15 +465,17 @@
 
     $().ready(function () {
       $("#btnResumo").click(function () {
+        let check = false;
+        console.log("Check ", check);
         // executa function para checar dados da reserva...
-        check = confirmaReserva();
+        check = window._Reserva.confirmaReserva();
+        // check = msgAula();
         console.log("Check ", check);
 
         if (check) {
           $("#modalResumo").modal("show");
           // $(".modal-body h3").html("Veja o resumo de sua solicitação!");
-
-          preencheModalResumo();
+          window._Reserva.preencheModalResumo();
         }
       });
     });
@@ -449,6 +500,7 @@
     // // console.log("checkbox", $(this).val());
     // console.log("str2", str2);
 
+    // deve ter outro jeito melhor de fazer isso...
     $("#servico1").click(function () {
       if ($("#servico1").is(":checked")) {
         localStorage.setItem("servico1", true);
